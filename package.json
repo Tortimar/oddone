@@ -1,0 +1,20 @@
+{
+  "name": "oddone",
+  "private": true,
+  "version": "0.1.0",
+  "description": "OddOne — party game multijoueur : des héros RPG, des mini-jeux et un imposteur à démasquer.",
+  "type": "module",
+  "workspaces": ["shared", "server", "client"],
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c yellow,cyan \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test -w server"
+  },
+  "devDependencies": {
+    "concurrently": "9.1.0",
+    "typescript": "5.6.3"
+  },
+  "engines": { "node": ">=20" }
+}
