@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { canvasTexture, roundRect } from '../engine/render.ts';
+import { canvasTexture, roundRect } from '../engine/toon.ts';
 
 /** Étiquette de nom flottante au-dessus d'un personnage. */
 export class NameTag {

@@ -1,12 +1,14 @@
 import * as THREE from 'three';
 import { GLTFLoader, type GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import type { KitClass } from '@oddone/shared';
-import { gradientMap } from '../engine/render.ts';
+import { gradientMap } from '../engine/toon.ts';
 
 /**
  * Bibliothèque de pièces KayKit Adventurers (CC0).
  * Les 5 modèles partagent le même squelette : on peut donc mélanger tête, tenue, chapeau…
- * Les fichiers sont produits par tools/ (animations triées, armes conservées).
+ * Les fichiers sont produits par tools/prepare-assets.mjs. Les animations sont dans un fichier
+ * à part (characters/animations.glb) : elles s'appliquent à tout perso KayKit par nom d'os.
  */
 
 export type SkinnedKey = 'body' | 'armL' | 'armR' | 'legL' | 'legR' | 'head';
@@ -24,10 +26,14 @@ export const LIB = {} as Record<KitClass, KitParts>;
 /** Animations (communes à tous les modèles), indexées par nom. */
 export const CLIPS: Record<string, THREE.AnimationClip> = {};
 
-export const loader = new GLTFLoader();
+/** Chargeur glTF partagé ; les kits de décor sont compressés avec meshopt. */
+export const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
 
 export async function loadCharacterLibrary(base = '/assets/characters/'): Promise<void> {
-  const gltfs = await Promise.all(KIT_CLASSES.map((k) => loader.loadAsync(`${base}${k}.glb`)));
+  const [anims, ...gltfs] = await Promise.all([
+    loader.loadAsync(`${base}animations.glb`),
+    ...KIT_CLASSES.map((k) => loader.loadAsync(`${base}${k}.glb`)),
+  ]);
   KIT_CLASSES.forEach((k, i) => {
     const gltf = gltfs[i];
     gltf.scene.updateMatrixWorld(true);
@@ -49,7 +55,7 @@ export async function loadCharacterLibrary(base = '/assets/characters/'): Promis
     });
     LIB[k] = parts;
   });
-  for (const clip of LIB.knight.gltf.animations) CLIPS[clip.name] = clip;
+  for (const clip of anims.animations) CLIPS[clip.name] = clip;
 }
 
 /* ---------------- Recoloration des atlas de dégradés ---------------- */

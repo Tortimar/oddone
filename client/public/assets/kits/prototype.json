@@ -1,0 +1,1015 @@
+{
+ "kit": "prototype",
+ "source": "KayKit-Prototype-Bits-1.0",
+ "license": "CC0",
+ "models": [
+  {
+   "name": "Barrel_A",
+   "category": null,
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.5
+   ]
+  },
+  {
+   "name": "Barrel_B",
+   "category": null,
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.5
+   ]
+  },
+  {
+   "name": "Barrel_C",
+   "category": null,
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.5
+   ]
+  },
+  {
+   "name": "Box_A",
+   "category": null,
+   "size": [
+    0.46,
+    0.51,
+    0.46
+   ],
+   "min": [
+    -0.23,
+    0,
+    -0.23
+   ]
+  },
+  {
+   "name": "Box_B",
+   "category": null,
+   "size": [
+    0.6,
+    0.4,
+    0.41
+   ],
+   "min": [
+    -0.3,
+    0,
+    -0.2
+   ]
+  },
+  {
+   "name": "Box_C",
+   "category": null,
+   "size": [
+    0.8,
+    0.4,
+    0.61
+   ],
+   "min": [
+    -0.4,
+    0,
+    -0.3
+   ]
+  },
+  {
+   "name": "Can_A",
+   "category": null,
+   "size": [
+    0.3,
+    0.48,
+    0.3
+   ],
+   "min": [
+    -0.15,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "Can_B",
+   "category": null,
+   "size": [
+    0.3,
+    0.48,
+    0.3
+   ],
+   "min": [
+    -0.15,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "Coin_A",
+   "category": null,
+   "size": [
+    1,
+    1,
+    0.35
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.17
+   ]
+  },
+  {
+   "name": "Coin_B",
+   "category": null,
+   "size": [
+    1,
+    1,
+    0.35
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.17
+   ]
+  },
+  {
+   "name": "Coin_C",
+   "category": null,
+   "size": [
+    1,
+    1,
+    0.35
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.17
+   ]
+  },
+  {
+   "name": "Cube_Prototype_Large_A",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Cube_Prototype_Large_B",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Cube_Prototype_Small",
+   "category": null,
+   "size": [
+    2,
+    2,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "Door_A",
+   "category": null,
+   "size": [
+    1.6,
+    2.8,
+    0.55
+   ],
+   "min": [
+    0,
+    0,
+    -0.27
+   ]
+  },
+  {
+   "name": "Door_A_Decorated",
+   "category": null,
+   "size": [
+    1.6,
+    2.8,
+    0.63
+   ],
+   "min": [
+    0,
+    0,
+    -0.27
+   ]
+  },
+  {
+   "name": "Door_B",
+   "category": null,
+   "size": [
+    1.6,
+    2.8,
+    0.54
+   ],
+   "min": [
+    0,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "Dummy_Base",
+   "category": null,
+   "size": [
+    1.94,
+    2.2,
+    0.99
+   ],
+   "min": [
+    -0.97,
+    0,
+    -0.45
+   ]
+  },
+  {
+   "name": "Floor",
+   "category": null,
+   "size": [
+    4,
+    0.5,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Floor_Dirt",
+   "category": null,
+   "size": [
+    4,
+    0.53,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Floor_Prototype",
+   "category": null,
+   "size": [
+    4,
+    0.5,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Pallet_Large",
+   "category": null,
+   "size": [
+    4,
+    0.5,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Pallet_Small",
+   "category": null,
+   "size": [
+    2,
+    0.5,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "Pallet_Small_Decorated_A",
+   "category": null,
+   "size": [
+    2,
+    1.5,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "Pallet_Small_Decorated_B",
+   "category": null,
+   "size": [
+    2,
+    3,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "Pillar_A",
+   "category": null,
+   "size": [
+    0.6,
+    4.1,
+    0.6
+   ],
+   "min": [
+    -0.3,
+    0,
+    -0.3
+   ]
+  },
+  {
+   "name": "Pillar_B",
+   "category": null,
+   "size": [
+    1,
+    4.1,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Beam",
+   "category": null,
+   "size": [
+    4,
+    1,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Cube",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Cube_Small",
+   "category": null,
+   "size": [
+    2,
+    2,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "Primitive_Doorway",
+   "category": null,
+   "size": [
+    4,
+    4,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Floor",
+   "category": null,
+   "size": [
+    4,
+    1,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Floor_Hole",
+   "category": null,
+   "size": [
+    4,
+    1,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Pillar",
+   "category": null,
+   "size": [
+    1,
+    4,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Slope",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Slope_Half",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Slope_Half_InnerCorner",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Slope_Half_OuterCorner",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Slope_InnerCorner",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Slope_OuterCorner",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Stairs",
+   "category": null,
+   "size": [
+    4,
+    4,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Stairs_Half",
+   "category": null,
+   "size": [
+    2,
+    2,
+    4
+   ],
+   "min": [
+    0,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "Primitive_Wall",
+   "category": null,
+   "size": [
+    4,
+    4,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Wall_Half",
+   "category": null,
+   "size": [
+    2,
+    4,
+    1
+   ],
+   "min": [
+    -1,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Wall_OpenCorner",
+   "category": null,
+   "size": [
+    4,
+    4,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Wall_Short",
+   "category": null,
+   "size": [
+    4,
+    2,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Wall_Slope",
+   "category": null,
+   "size": [
+    4,
+    4,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Primitive_Window",
+   "category": null,
+   "size": [
+    4,
+    4,
+    1
+   ],
+   "min": [
+    -2,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "Wall",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.53
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "Wall_Decorated",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.91
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "Wall_Doorway",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.53
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "Wall_Half",
+   "category": null,
+   "size": [
+    2,
+    4,
+    0.53
+   ],
+   "min": [
+    0,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "Wall_Target",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.99
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "Wall_Window_Closed",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.53
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "Wall_Window_Open",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.53
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "table_medium",
+   "category": null,
+   "size": [
+    2,
+    0.8,
+    1.5
+   ],
+   "min": [
+    -1,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "table_medium_Decorated",
+   "category": null,
+   "size": [
+    2,
+    1.71,
+    1.5
+   ],
+   "min": [
+    -1,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "table_medium_long",
+   "category": null,
+   "size": [
+    3,
+    1,
+    1.5
+   ],
+   "min": [
+    -1.5,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "target",
+   "category": null,
+   "size": [
+    1,
+    1,
+    0.2
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    0
+   ]
+  },
+  {
+   "name": "target_pieces_A",
+   "category": null,
+   "size": [
+    0.43,
+    0.5,
+    0.2
+   ],
+   "min": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "target_pieces_B",
+   "category": null,
+   "size": [
+    0.5,
+    0.68,
+    0.2
+   ],
+   "min": [
+    0,
+    -0.43,
+    0
+   ]
+  },
+  {
+   "name": "target_pieces_C",
+   "category": null,
+   "size": [
+    0.25,
+    0.5,
+    0.2
+   ],
+   "min": [
+    0,
+    -0.5,
+    0
+   ]
+  },
+  {
+   "name": "target_pieces_D",
+   "category": null,
+   "size": [
+    0.43,
+    0.5,
+    0.2
+   ],
+   "min": [
+    -0.43,
+    -0.5,
+    0
+   ]
+  },
+  {
+   "name": "target_pieces_E",
+   "category": null,
+   "size": [
+    0.5,
+    0.68,
+    0.2
+   ],
+   "min": [
+    -0.5,
+    -0.25,
+    0
+   ]
+  },
+  {
+   "name": "target_pieces_F",
+   "category": null,
+   "size": [
+    0.25,
+    0.5,
+    0.2
+   ],
+   "min": [
+    -0.25,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "target_small",
+   "category": null,
+   "size": [
+    0.5,
+    1.1,
+    0.15
+   ],
+   "min": [
+    -0.25,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "target_stand_A",
+   "category": null,
+   "size": [
+    1,
+    2,
+    1.5
+   ],
+   "min": [
+    -0.5,
+    0,
+    -1.1
+   ]
+  },
+  {
+   "name": "target_stand_A_Decorated",
+   "category": null,
+   "size": [
+    1.94,
+    2.44,
+    1.5
+   ],
+   "min": [
+    -0.97,
+    0,
+    -1.1
+   ]
+  },
+  {
+   "name": "target_stand_B",
+   "category": null,
+   "size": [
+    1,
+    2,
+    1.5
+   ],
+   "min": [
+    -0.5,
+    0,
+    -1.1
+   ]
+  },
+  {
+   "name": "target_wall_large_A",
+   "category": null,
+   "size": [
+    2,
+    2,
+    0.2
+   ],
+   "min": [
+    -1,
+    -1,
+    -0.1
+   ]
+  },
+  {
+   "name": "target_wall_large_B",
+   "category": null,
+   "size": [
+    2,
+    2,
+    0.2
+   ],
+   "min": [
+    -1,
+    -1,
+    -0.1
+   ]
+  },
+  {
+   "name": "target_wall_small",
+   "category": null,
+   "size": [
+    1.18,
+    1.14,
+    0.33
+   ],
+   "min": [
+    -0.59,
+    -0.59,
+    0
+   ]
+  }
+ ]
+}

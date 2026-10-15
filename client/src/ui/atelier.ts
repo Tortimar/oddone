@@ -1,17 +1,25 @@
 import {
-  ACCESSORY_COLORS, BACK_ACC, BODIES, CAPES, FACE_ACC, HATS, HEADS, HUES, LEFT_HAND, NECK_ACC, RIGHT_HAND,
-  SIZES, SKINS, TOP_ACC, sanitizeName, type CharacterConfig, type Option,
+  ACCESSORY_COLORS, BACK_ACC, BODIES, CAPES, FACE_ACC, HATS, HEADS, HUES, NECK_ACC,
+  SKINS, TOP_ACC, randomConfig, sanitizeName, type CharacterConfig, type Option,
 } from '@oddone/shared';
-import { $ } from './dom.ts';
+import { $, escapeHtml } from './dom.ts';
+import { cachedShot, characterShot, type Shot } from './portraits.ts';
 
-/** Atelier de la couturière : modifie la tenue du joueur local. */
+/**
+ * Atelier de la couturière : modifie la tenue du joueur local.
+ * Chaque choix est une vignette cliquable : ton personnage, tel qu'il serait avec ce choix
+ * (la tête pour les têtes et accessoires du visage, en pied pour les tenues, de dos pour la cape
+ * et le dos). Les vignettes sont rendues hors écran, quelques-unes par image, puis gardées en cache.
+ */
 
-type ListKey = 'body' | 'head' | 'hat' | 'cape' | 'size' | 'top' | 'face' | 'neck' | 'back' | 'right' | 'left';
-const LISTS: [string, readonly Option[], ListKey][] = [
-  ['op-body', BODIES, 'body'], ['op-head', HEADS, 'head'], ['op-hat', HATS, 'hat'], ['op-cape', CAPES, 'cape'],
-  ['op-size', SIZES, 'size'], ['op-top', TOP_ACC, 'top'], ['op-face', FACE_ACC, 'face'], ['op-neck', NECK_ACC, 'neck'],
-  ['op-back', BACK_ACC, 'back'], ['op-right', RIGHT_HAND, 'right'], ['op-left', LEFT_HAND, 'left'],
+type ListKey = 'body' | 'head' | 'hat' | 'cape' | 'top' | 'face' | 'neck' | 'back';
+const LISTS: [string, readonly Option[], ListKey, Shot][] = [
+  ['op-body', BODIES, 'body', 'body'], ['op-head', HEADS, 'head', 'head'], ['op-hat', HATS, 'hat', 'head'], ['op-cape', CAPES, 'cape', 'back'],
+  ['op-top', TOP_ACC, 'top', 'head'], ['op-face', FACE_ACC, 'face', 'head'], ['op-neck', NECK_ACC, 'neck', 'body'],
+  ['op-back', BACK_ACC, 'back', 'back'],
 ];
+/** Vignettes rendues par image (un rendu de personnage coûte quelques millisecondes). */
+const SHOTS_PER_FRAME = 3;
 
 export interface AtelierHooks {
   getProfile(): { name: string; cfg: CharacterConfig };
@@ -20,8 +28,6 @@ export interface AtelierHooks {
   onClose(): void;
 }
 
-const pick = <T>(a: readonly T[]) => a[Math.floor(Math.random() * a.length)];
-const maybe = (a: readonly Option[], p: number) => (Math.random() < p ? pick(a.slice(1))[0] : 'none');
 
 export function initAtelier(h: AtelierHooks) {
   const panel = $('panel');
@@ -33,8 +39,44 @@ export function initAtelier(h: AtelierHooks) {
 
   for (const [id, list, key] of LISTS) {
     const el = $(id);
-    el.innerHTML = list.map(([v, l]) => `<button data-v="${v}">${l}</button>`).join('');
+    el.classList.add('pics');
+    el.innerHTML = list.map(([v, l]) => `<button data-v="${escapeHtml(v)}" title="${escapeHtml(l)}" aria-label="${escapeHtml(l)}" class="${v === 'none' ? 'none' : ''}"><img alt="" draggable="false"><span>${escapeHtml(l)}</span></button>`).join('');
     el.onclick = (e) => { const b = (e.target as HTMLElement).closest('button'); if (b) update({ [key]: b.dataset.v } as Partial<CharacterConfig>); };
+  }
+
+  // vignettes à rendre : la plus récente demande l'emporte (on change vite d'avis à l'atelier)
+  let queue: { img: HTMLImageElement; cfg: CharacterConfig; shot: Shot }[] = [];
+  let pumping = false;
+  const pump = () => {
+    for (let k = 0; k < SHOTS_PER_FRAME && queue.length; k++) {
+      const job = queue.shift()!;
+      const url = characterShot(job.cfg, job.shot);
+      if (url && job.img.dataset.want === `${job.shot}:${JSON.stringify(job.cfg)}`) job.img.src = url;
+    }
+    if (queue.length && !panel.hidden) requestAnimationFrame(pump); else pumping = false;
+  };
+  function refreshPictures(cfg: CharacterConfig) {
+    queue = [];
+    for (const [id, , key, shot] of LISTS) {
+      $(id).querySelectorAll<HTMLButtonElement>('button').forEach((b) => {
+        const img = b.querySelector('img')!;
+        const c = { ...cfg, [key]: b.dataset.v };
+        // pour un accessoire, on enlève ceux qui gêneraient (un chapeau cache la couronne)
+        if (key === 'top' || key === 'face') c.hat = 'none';
+        if (key === 'back') c.cape = 'none';
+        if (key === 'cape') c.back = 'none';
+        const want = `${shot}:${JSON.stringify(c)}`;
+        if (img.dataset.want === want) return;
+        img.dataset.want = want;
+        const hit = cachedShot(c, shot);
+        if (hit) img.src = hit;
+        else queue.push({ img, cfg: c, shot });
+      });
+    }
+    // d'abord la section affichée
+    const visible = (j: { img: HTMLImageElement }) => !j.img.closest<HTMLElement>('[data-sec]')!.hidden;
+    queue.sort((a, b) => Number(visible(b)) - Number(visible(a)));
+    if (queue.length && !pumping) { pumping = true; requestAnimationFrame(pump); }
   }
   $('sw-hue').innerHTML = HUES.map((hue) => hue === null
     ? '<button class="orig" data-v="" aria-label="Couleurs d\'origine"></button>'
@@ -52,24 +94,22 @@ export function initAtelier(h: AtelierHooks) {
     const b = (e.target as HTMLElement).closest('button'); if (!b) return;
     tabs.querySelectorAll('button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
     panel.querySelectorAll<HTMLElement>('[data-sec]').forEach((x) => { x.hidden = x.dataset.sec !== b.dataset.tab; });
+    refreshPictures(h.getProfile().cfg);
   };
 
   const nameInput = $<HTMLInputElement>('name');
   nameInput.addEventListener('input', () => { const { cfg } = h.getProfile(); h.onChange(sanitizeName(nameInput.value), cfg); });
   nameInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') nameInput.blur(); e.stopPropagation(); });
 
-  $('rand').onclick = () => update({
-    body: pick(BODIES)[0], head: pick(HEADS)[0], hat: maybe(HATS, 0.4), cape: maybe(CAPES, 0.6),
-    hue: pick(HUES), skin: pick(SKINS), top: maybe(TOP_ACC, 0.4), face: maybe(FACE_ACC, 0.5), neck: maybe(NECK_ACC, 0.4),
-    back: maybe(BACK_ACC, 0.4), right: maybe(RIGHT_HAND, 0.4), left: maybe(LEFT_HAND, 0.3), acol: pick(ACCESSORY_COLORS), size: pick(SIZES)[0],
-  });
-  const close = () => { panel.hidden = true; h.onClose(); };
+  $('rand').onclick = () => update(randomConfig());
+  const close = () => { if (panel.hidden) return; panel.hidden = true; h.onClose(); };
   $('closePanel').onclick = close;
   $('donePanel').onclick = close;
 
   function sync() {
     const { name, cfg } = h.getProfile();
     for (const [id, , key] of LISTS) $(id).querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === cfg[key])));
+    refreshPictures(cfg);
     $('sw-acol').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === cfg.acol)));
     $('sw-hue').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.v === '' ? null : Number(b.dataset.v)) === cfg.hue)));
     $('sw-skin').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.v || null) === cfg.skin)));

@@ -1,19 +1,26 @@
 import * as THREE from 'three';
 import { DEFAULT_CONFIG, SEAT_COUNT, type CharacterConfig } from '@oddone/shared';
-import { canvasTexture, gradientMap, part, scene, shade } from '../engine/render.ts';
-import { loader, LIB, kitMaterials } from '../characters/library.ts';
+import { camera, canvasTexture, gradientMap, part, scene, shade } from '../engine/render.ts';
+import { LIB, kitMaterials } from '../characters/library.ts';
+import { loadKit } from './kits.ts';
+import { buildOutside } from './outside.ts';
+import { decorateTavern } from './tavernDecor.ts';
 import { measureSitPose, playAnimation, setActorModel, updateActor, type Actor } from '../characters/character.ts';
 
 /**
- * La taverne : décor KayKit Dungeon Remastered + Furniture Bits (CC0), comptoir et cheminée
- * modélisés en code, PNJ, lumières, et données de collision.
+ * La taverne : structure (murs et sol des kits KayKit, comptoir et cheminée modélisés en code),
+ * PNJ, lumières et collisions. L'habillage est dans tavernDecor.ts, l'extérieur de nuit vu par
+ * les fenêtres dans outside.ts.
  * Unités : celles des modèles KayKit (un mur = 4 × 4, un perso ≈ 2,5 de haut).
  */
 
 export const ROOM = { halfX: 10, halfZ: 8 };
-export interface Box { x0: number; x1: number; z0: number; z1: number }
-export interface Circle { x: number; z: number; r: number }
-export type WallSide = 'front' | 'back' | 'left' | 'right';
+/** Hauteur des murs (deux rangées de murs KayKit de 4) et du plafond. */
+export const WALL_HEIGHT = 8;
+/** Zone où la caméra a le droit d'aller : l'intérieur de la salle, avec une marge. */
+export const CAMERA_BOUNDS = { minX: -ROOM.halfX + 0.45, maxX: ROOM.halfX - 0.45, minY: 0.4, maxY: WALL_HEIGHT - 0.9, minZ: -ROOM.halfZ + 0.45, maxZ: ROOM.halfZ - 0.45 };
+export type { Box, Circle } from '@oddone/shared';
+import type { Box, Bounds, Circle } from '@oddone/shared';
 
 export interface Npc extends Actor {
   id: 'barman' | 'tailor';
@@ -24,13 +31,23 @@ export interface Npc extends Actor {
   busyTime: number;
 }
 
-export interface Tavern {
+/** Un lieu où l'on marche : obstacles et limites (taverne, arène d'un mini-jeu). */
+export interface World {
   colliders: Box[];
   circles: Circle[];
+  bounds: Bounds;
+  /** Blocs sur lesquels on peut monter (podium) : boîte au sol + hauteur du dessus. */
+  steps?: (Box & { top: number })[];
+  /** Sol troué (gouffre) : false là où il n'y a que le vide. Absent : sol partout. */
+  floor?: (x: number, z: number) => boolean;
+  /** Hauteur du sol (rampe des Tonneaux Fous). Absent : sol à 0. */
+  ground?: (x: number, z: number) => number;
+}
+
+export interface Tavern extends World {
   stools: { x: number; z: number }[];
   /** Décalage hanches/racine en pose assise (pour poser le perso sur le tabouret). */
   sitOffset: THREE.Vector3;
-  wallsBySide: Record<WallSide, THREE.Object3D[]>;
   npcs: Record<Npc['id'], Npc>;
   mugs: THREE.Mesh[];
   update(t: number, dt: number): void;
@@ -38,45 +55,63 @@ export interface Tavern {
 
 const BAR_Z = -4.6, BAR_HALF = 5.4;
 const BARMAN_CFG: CharacterConfig = { ...DEFAULT_CONFIG, body: 'barbarian', head: 'barbarian', cape: 'none', hue: 22, right: 'barbarian:Mug', size: '1.14' };
-const TAILOR_CFG: CharacterConfig = { ...DEFAULT_CONFIG, body: 'mage', head: 'mage', hat: 'mage', cape: 'none', hue: 325, face: 'glasses', left: 'mage:Spellbook_open' };
+const TAILOR_CFG: CharacterConfig = { ...DEFAULT_CONFIG, body: 'mage', head: 'mage', hat: 'mage', cape: 'none', hue: 325, face: 'glasses' };
+
+/** Plafond de planches sombres, poutres et solives ; ne porte pas d'ombre. */
+function buildCeiling(upperWalls: THREE.Object3D[]): void {
+  const { halfX: RX, halfZ: RZ } = ROOM;
+  const planks = canvasTexture(256, 256, (g, w, h) => {
+    g.fillStyle = '#3e2616'; g.fillRect(0, 0, w, h);
+    for (let i = 0; i < 8; i++) {
+      g.fillStyle = i % 2 ? '#472c1a' : '#3a2314'; g.fillRect(0, i * 32, w, 32);
+      g.fillStyle = '#24150c'; g.fillRect(0, i * 32, w, 3);
+      g.fillStyle = 'rgba(0,0,0,.18)'; g.fillRect(((i * 97) % 200) + 20, i * 32 + 3, 3, 29);
+    }
+  });
+  planks.wrapS = planks.wrapT = THREE.RepeatWrapping;
+  planks.repeat.set(5, 4);
+  const ceiling = new THREE.Mesh(new THREE.PlaneGeometry(RX * 2 + 1, RZ * 2 + 1), new THREE.MeshToonMaterial({ map: planks, gradientMap, side: THREE.DoubleSide }));
+  ceiling.rotation.x = Math.PI / 2;
+  ceiling.position.y = WALL_HEIGHT;
+  ceiling.receiveShadow = true;
+  scene.add(ceiling);
+  const beams: THREE.Mesh[] = [];
+  for (let x = -8; x <= 8; x += 4) {
+    const b = part(scene, new THREE.BoxGeometry(0.45, 0.5, RZ * 2), '#5a3a22', { outline: true });
+    b.position.set(x, WALL_HEIGHT - 0.25, 0);
+    beams.push(b);
+  }
+  for (const z of [-RZ + 0.25, RZ - 0.25]) {
+    const b = part(scene, new THREE.BoxGeometry(RX * 2, 0.4, 0.5), '#4a2f1d', { outline: true });
+    b.position.set(0, WALL_HEIGHT - 0.2, z);
+    beams.push(b);
+  }
+  // bandeau de bois qui marque la jonction entre les deux rangées de murs
+  for (const [x, z, w, d] of [[0, -RZ + 0.08, RX * 2, 0.16], [0, RZ - 0.08, RX * 2, 0.16], [-RX + 0.08, 0, 0.16, RZ * 2], [RX - 0.08, 0, 0.16, RZ * 2]] as const) {
+    const b = part(scene, new THREE.BoxGeometry(w, 0.28, d), '#5a3a22', { outline: true });
+    b.position.set(x, 4.05, z);
+  }
+  for (const o of [...upperWalls, ...beams]) o.traverse((m) => { m.castShadow = false; });
+}
 
 export async function buildTavern(): Promise<Tavern> {
-  const gltf = await loader.loadAsync('/assets/props/tavern-props.glb');
-  const protos: Record<string, THREE.Object3D> = {};
-  for (const c of gltf.scene.children) protos[c.name] = c;
-  const mats = new Map<string, THREE.MeshToonMaterial>();
-  gltf.scene.traverse((o) => {
-    const m = o as THREE.Mesh;
-    if (!m.isMesh) return;
-    const src = m.material as THREE.MeshStandardMaterial;
-    if (!mats.has(src.uuid)) mats.set(src.uuid, new THREE.MeshToonMaterial({ map: src.map, color: src.color, gradientMap }));
-    m.material = mats.get(src.uuid)!;
-    m.castShadow = m.receiveShadow = true;
-  });
+  const [dungeon, furniture, restaurant, halloween, medieval] = await Promise.all(
+    (['dungeon', 'furniture', 'restaurant', 'halloween', 'medieval'] as const).map((k) => loadKit(k)));
 
   const { halfX: RX, halfZ: RZ } = ROOM;
   const colliders: Box[] = [];
   const circles: Circle[] = [];
-  const wallsBySide: Record<WallSide, THREE.Object3D[]> = { front: [], back: [], left: [], right: [] };
   const box = (x0: number, x1: number, z0: number, z1: number) => colliders.push({ x0, x1, z0, z1 });
-  const sideOf = (x: number, z: number): WallSide | null =>
-    Math.abs(z) >= RZ - 0.05 && Math.abs(z) <= RZ + 1.7 ? (z > 0 ? 'front' : 'back')
-      : Math.abs(x) >= RX - 0.05 && Math.abs(x) <= RX + 1.7 ? (x > 0 ? 'right' : 'left') : null;
 
   const prop = (name: string, x: number, z: number, ry = 0, y = 0, s = 1) => {
-    const p = protos[name];
-    if (!p) { console.warn('Décor manquant :', name); return null; }
-    const c = p.clone();
-    c.position.set(x, y, z); c.rotation.y = ry; c.scale.setScalar(s);
-    scene.add(c);
-    const side = sideOf(x, z);
-    if (side) wallsBySide[side].push(c);
-    return c;
+    const kit = dungeon.has(name) ? dungeon : furniture.has(name) ? furniture : null;
+    if (!kit) { console.warn('Décor manquant :', name); return null; }
+    return kit.spawn(name, { x, y, z, ry, scale: s, parent: scene });
   };
 
-  /* ---------- lumière : chaude, un peu de lune aux fenêtres ---------- */
-  scene.background = new THREE.Color('#1a0f0a');
-  scene.fog = new THREE.Fog('#1a0f0a', 26, 48);
+  /* ---------- lumière : chaude à l'intérieur, nuit bleutée dehors ---------- */
+  scene.background = new THREE.Color('#0b0d26');
+  scene.fog = new THREE.Fog('#2a2148', 30, 95);
   scene.add(new THREE.HemisphereLight('#ffd9a8', '#3a2418', 1.7));
   const sun = new THREE.DirectionalLight('#ffe2b8', 1.4);
   sun.position.set(-6, 16, 10);
@@ -101,18 +136,23 @@ export async function buildTavern(): Promise<Tavern> {
     prop(x === 0 ? 'wall_doorway' : Math.abs(x) === 4 ? 'wall_window_open' : 'wall', x, RZ + 0.5, Math.PI);
   }
   for (let z = -6; z <= 6; z += 4) {
-    prop(z === 2 || z === -6 ? 'wall_window_open' : 'wall', -RX - 0.5, z, Math.PI / 2);
+    // (pas de fenêtre derrière la cheminée : celle du mur gauche est au fond, en z = 6)
+    prop(z === 6 || z === -6 ? 'wall_window_open' : 'wall', -RX - 0.5, z, Math.PI / 2);
     prop(z === -2 || z === 6 ? 'wall_window_open' : 'wall', RX + 0.5, z, -Math.PI / 2);
   }
   for (const sx of [-1, 1]) for (const sz of [-1, 1]) prop('pillar', sx * (RX + 0.5), sz * (RZ + 0.5));
-  const night = new THREE.MeshBasicMaterial({ color: '#22345e' });
-  const pane = (x: number, z: number, ry: number) => {
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), night);
-    m.position.set(x, 2, z); m.rotation.y = ry; scene.add(m);
-    wallsBySide[sideOf(x, z)!].push(m);
-  };
-  pane(-4, RZ + 1.6, Math.PI); pane(4, RZ + 1.6, Math.PI); pane(0, RZ + 1.6, Math.PI);
-  pane(-RX - 1.6, 2, Math.PI / 2); pane(-RX - 1.6, -6, Math.PI / 2); pane(RX + 1.6, -2, -Math.PI / 2); pane(RX + 1.6, 6, -Math.PI / 2);
+  // deuxième rangée de murs pleins jusqu'au plafond (elle ne porte pas d'ombre : le soleil doit entrer)
+  const upper: THREE.Object3D[] = [];
+  for (let x = -8; x <= 8; x += 4) {
+    upper.push(prop('wall', x, -RZ - 0.5, 0, 4)!, prop('wall', x, RZ + 0.5, Math.PI, 4)!);
+  }
+  for (let z = -6; z <= 6; z += 4) {
+    upper.push(prop('wall', -RX - 0.5, z, Math.PI / 2, 4)!, prop('wall', RX + 0.5, z, -Math.PI / 2, 4)!);
+  }
+  for (const sx of [-1, 1]) for (const sz of [-1, 1]) upper.push(prop('pillar', sx * (RX + 0.5), sz * (RZ + 0.5), 0, 4)!);
+  buildCeiling(upper);
+  // dehors : ciel étoilé, village, forêt (masqués avec le mur de leur côté)
+  const outside = buildOutside(scene, { medieval, halloween }, ROOM);
 
   /* ---------- le comptoir, hauteur réglée sur l'animation assise ---------- */
   const sitHips = measureSitPose(DEFAULT_CONFIG);
@@ -192,8 +232,8 @@ export async function buildTavern(): Promise<Tavern> {
   prop('barrel_large', -8.6, 6.6, 0, 0, 0.75); prop('crates_stacked', 8.4, 6.7, 0.2, 0, 0.8); prop('barrel_small_stack', -8.8, 4.4, 0, 0, 0.7);
   box(-RX, -7.7, 3.7, RZ); box(7.4, RX, 5.9, RZ);
   prop('banner_shield_blue', -RX - 0.5, -2, Math.PI / 2); prop('banner_patternB_green', RX + 0.5, 2, -Math.PI / 2);
-  prop('torch_mounted', -RX, 6, Math.PI / 2); prop('torch_mounted', RX, -4, -Math.PI / 2);
-  pointLight('#ffb35c', 4, 10, -RX + 0.7, 3.0, 6, 1.6);
+  prop('torch_mounted', -RX, 4, Math.PI / 2); prop('torch_mounted', RX, -4, -Math.PI / 2);
+  pointLight('#ffb35c', 4, 10, -RX + 0.7, 3.0, 4, 1.6);
   prop('torch_mounted', -2.2, RZ, Math.PI); prop('torch_mounted', 2.2, RZ, Math.PI);
 
   /* ---------- coin de la couturière ---------- */
@@ -204,6 +244,12 @@ export async function buildTavern(): Promise<Tavern> {
   prop('trunk_large_A', 8.7, -0.9, -Math.PI / 2, 0, 0.75);
   box(RX - 1.2, RX, -2.8, 2.2);
   pointLight('#ffd9a8', 4, 10, 7.5, 3.4, 1, 0.6);
+
+  /* ---------- habillage ---------- */
+  const decor = decorateTavern({
+    scene, kits: { dungeon, furniture, restaurant, halloween }, room: ROOM, colliders, circles,
+    counterH, barZ: BAR_Z, pointLight,
+  });
 
   /* ---------- PNJ ---------- */
   const makeNpc = (id: Npc['id'], name: string, cfg: CharacterConfig, home: THREE.Vector3, yaw: number): Npc => {
@@ -219,9 +265,11 @@ export async function buildTavern(): Promise<Tavern> {
   };
 
   return {
-    colliders, circles, stools, wallsBySide, npcs, mugs,
+    colliders, circles, bounds: ROOM, stools, npcs, mugs,
     sitOffset: new THREE.Vector3(sitHips.x, 0, sitHips.z),
     update(t, dt) {
+      outside.update(t);
+      decor.update(t, dt, camera.position);
       for (const f of flames) { const k = 1 + Math.sin(t * (9 + f.i * 2.3) + f.i) * 0.12 + Math.sin(t * 23 + f.i * 5) * 0.06; f.mesh.scale.set(1, k, 1); f.mesh.position.y = 0.45 + (f.h * k) / 2; }
       for (const f of flickers) f.light.intensity = f.base * (0.85 + 0.1 * Math.sin(t * (7 + f.f)) + 0.06 * Math.sin(t * (19 + f.f * 3)));
       for (const n of Object.values(npcs)) {

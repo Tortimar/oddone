@@ -31,6 +31,8 @@ Puis ouvre http://localhost:5173. Pour tester à plusieurs en local, ouvre un de
 | `npm run typecheck` | vérifie les types des trois paquets |
 | `npm test` | tests de la logique du lobby (serveur) |
 
+Le **catalogue des décors** est sur http://localhost:5173/catalog.html : environ 770 modèles gratuits rangés par pack, vus en 3D à côté d'un héros.
+
 ## Mettre en ligne
 
 Un seul processus Node suffit : `npm install && npm run build && npm start`. Le port vient de la variable `PORT`. Ça tourne tel quel sur Render, Railway, Fly.io ou un VPS. Les WebSockets doivent être autorisés par l'hébergeur.
@@ -41,11 +43,11 @@ Un seul processus Node suffit : `npm install && npm run build && npm start`. Le 
 shared/   types et règles communs (catalogue de personnalisation, protocole réseau)
 server/   Express + Socket.io : tavernes, codes, tabourets, compte à rebours
 client/   Vite + TypeScript + Three.js : rendu, personnages, taverne, interface
-tools/    pipeline d'assets (téléchargement et allègement des packs KayKit)
+tools/    pipeline d'assets (téléchargement, allègement et compression des packs KayKit)
 ```
 
 Les détails d'architecture sont dans [CLAUDE.md](CLAUDE.md).
 
 ## Crédits
 
-Personnages, décor et animations : packs **KayKit** de Kay Lousberg (Adventurers, Dungeon Remastered, Furniture Bits), licence **CC0**. Créditer n'est pas obligatoire, mais c'est apprécié : www.kaylousberg.com
+Personnages, décor et animations : packs **KayKit** de Kay Lousberg (Adventurers, Skeletons, Dungeon Remastered, Furniture Bits, Restaurant Bits, Halloween Bits, Prototype Bits, Medieval Hexagon), licence **CC0**. Créditer n'est pas obligatoire, mais c'est apprécié : www.kaylousberg.com

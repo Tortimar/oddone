@@ -1,0 +1,749 @@
+{
+ "kit": "furniture",
+ "source": "KayKit-Furniture-Bits-1.0",
+ "license": "CC0",
+ "models": [
+  {
+   "name": "armchair",
+   "category": null,
+   "size": [
+    1.8,
+    1.22,
+    1.6
+   ],
+   "min": [
+    -0.9,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "armchair_pillows",
+   "category": null,
+   "size": [
+    1.8,
+    1.22,
+    1.6
+   ],
+   "min": [
+    -0.9,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "bed_double_A",
+   "category": null,
+   "size": [
+    3.1,
+    1,
+    3
+   ],
+   "min": [
+    -1.55,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "bed_double_B",
+   "category": null,
+   "size": [
+    3.1,
+    1,
+    3
+   ],
+   "min": [
+    -1.55,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "bed_single_A",
+   "category": null,
+   "size": [
+    1.6,
+    1,
+    3
+   ],
+   "min": [
+    -0.8,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "bed_single_B",
+   "category": null,
+   "size": [
+    1.6,
+    1,
+    3
+   ],
+   "min": [
+    -0.8,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "book_set",
+   "category": null,
+   "size": [
+    0.78,
+    0.5,
+    0.36
+   ],
+   "min": [
+    -0.39,
+    -0.25,
+    -0.18
+   ]
+  },
+  {
+   "name": "book_single",
+   "category": null,
+   "size": [
+    0.26,
+    0.5,
+    0.36
+   ],
+   "min": [
+    -0.13,
+    -0.25,
+    -0.18
+   ]
+  },
+  {
+   "name": "cabinet_medium",
+   "category": null,
+   "size": [
+    2,
+    1,
+    1
+   ],
+   "min": [
+    -1,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "cabinet_medium_decorated",
+   "category": null,
+   "size": [
+    2.04,
+    1.83,
+    1
+   ],
+   "min": [
+    -1,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "cabinet_small",
+   "category": null,
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "cabinet_small_decorated",
+   "category": null,
+   "size": [
+    1.05,
+    1.62,
+    1.1
+   ],
+   "min": [
+    -0.54,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "cactus_medium_A",
+   "category": null,
+   "size": [
+    0.88,
+    0.83,
+    0.84
+   ],
+   "min": [
+    -0.44,
+    0,
+    -0.42
+   ]
+  },
+  {
+   "name": "cactus_medium_B",
+   "category": null,
+   "size": [
+    0.88,
+    0.83,
+    0.84
+   ],
+   "min": [
+    -0.44,
+    0,
+    -0.42
+   ]
+  },
+  {
+   "name": "cactus_small_A",
+   "category": null,
+   "size": [
+    0.5,
+    0.55,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "cactus_small_B",
+   "category": null,
+   "size": [
+    0.5,
+    0.55,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "chair_A",
+   "category": null,
+   "size": [
+    0.75,
+    1.26,
+    0.85
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "chair_A_wood",
+   "category": null,
+   "size": [
+    0.75,
+    1.26,
+    0.85
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "chair_B",
+   "category": null,
+   "size": [
+    0.75,
+    1.26,
+    0.85
+   ],
+   "min": [
+    -0.37,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "chair_B_wood",
+   "category": null,
+   "size": [
+    0.75,
+    1.26,
+    0.85
+   ],
+   "min": [
+    -0.37,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "chair_C",
+   "category": null,
+   "size": [
+    0.75,
+    1.2,
+    0.94
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.56
+   ]
+  },
+  {
+   "name": "chair_stool",
+   "category": null,
+   "size": [
+    0.75,
+    0.5,
+    0.75
+   ],
+   "min": [
+    -0.37,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "chair_stool_wood",
+   "category": null,
+   "size": [
+    0.75,
+    0.5,
+    0.75
+   ],
+   "min": [
+    -0.37,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "couch",
+   "category": null,
+   "size": [
+    3,
+    1.22,
+    1.6
+   ],
+   "min": [
+    -1.5,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "couch_pillows",
+   "category": null,
+   "size": [
+    3,
+    1.22,
+    1.6
+   ],
+   "min": [
+    -1.5,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "lamp_standing",
+   "category": null,
+   "size": [
+    1,
+    2.52,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "lamp_table",
+   "category": null,
+   "size": [
+    1,
+    1.02,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "pictureframe_large_A",
+   "category": null,
+   "size": [
+    1.01,
+    1.2,
+    0.2
+   ],
+   "min": [
+    -0.5,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "name": "pictureframe_large_B",
+   "category": null,
+   "size": [
+    2,
+    1.2,
+    0.2
+   ],
+   "min": [
+    -1,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "name": "pictureframe_medium",
+   "category": null,
+   "size": [
+    0.7,
+    0.9,
+    0.2
+   ],
+   "min": [
+    -0.35,
+    -0.45,
+    0
+   ]
+  },
+  {
+   "name": "pictureframe_small_A",
+   "category": null,
+   "size": [
+    0.5,
+    0.6,
+    0.2
+   ],
+   "min": [
+    -0.25,
+    -0.3,
+    0
+   ]
+  },
+  {
+   "name": "pictureframe_small_B",
+   "category": null,
+   "size": [
+    0.7,
+    0.44,
+    0.2
+   ],
+   "min": [
+    -0.35,
+    -0.22,
+    0
+   ]
+  },
+  {
+   "name": "pictureframe_small_C",
+   "category": null,
+   "size": [
+    0.5,
+    0.5,
+    0.2
+   ],
+   "min": [
+    -0.25,
+    -0.25,
+    0
+   ]
+  },
+  {
+   "name": "pictureframe_standing_A",
+   "category": null,
+   "size": [
+    0.5,
+    0.62,
+    0.38
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.21
+   ]
+  },
+  {
+   "name": "pictureframe_standing_B",
+   "category": null,
+   "size": [
+    0.7,
+    0.47,
+    0.36
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.19
+   ]
+  },
+  {
+   "name": "pillow_A",
+   "category": null,
+   "size": [
+    0.65,
+    0.2,
+    0.5
+   ],
+   "min": [
+    -0.33,
+    -0.1,
+    -0.25
+   ]
+  },
+  {
+   "name": "pillow_B",
+   "category": null,
+   "size": [
+    0.65,
+    0.2,
+    0.5
+   ],
+   "min": [
+    -0.33,
+    -0.1,
+    -0.25
+   ]
+  },
+  {
+   "name": "rug_oval_A",
+   "category": null,
+   "size": [
+    3,
+    0.1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "rug_oval_B",
+   "category": null,
+   "size": [
+    3,
+    0.1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "rug_rectangle_A",
+   "category": null,
+   "size": [
+    3,
+    0.1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "rug_rectangle_B",
+   "category": null,
+   "size": [
+    3,
+    0.1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "rug_rectangle_stripes_A",
+   "category": null,
+   "size": [
+    3,
+    0.1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "rug_rectangle_stripes_B",
+   "category": null,
+   "size": [
+    3,
+    0.1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "shelf_A_big",
+   "category": null,
+   "size": [
+    2,
+    0.4,
+    0.5
+   ],
+   "min": [
+    -1,
+    -0.3,
+    0
+   ]
+  },
+  {
+   "name": "shelf_A_small",
+   "category": null,
+   "size": [
+    1,
+    0.4,
+    0.5
+   ],
+   "min": [
+    -0.5,
+    -0.3,
+    0
+   ]
+  },
+  {
+   "name": "shelf_B_large",
+   "category": null,
+   "size": [
+    2,
+    0.4,
+    0.5
+   ],
+   "min": [
+    -1,
+    -0.1,
+    0
+   ]
+  },
+  {
+   "name": "shelf_B_large_decorated",
+   "category": null,
+   "size": [
+    2,
+    0.82,
+    0.5
+   ],
+   "min": [
+    -1,
+    -0.1,
+    0
+   ]
+  },
+  {
+   "name": "shelf_B_small",
+   "category": null,
+   "size": [
+    1,
+    0.4,
+    0.5
+   ],
+   "min": [
+    -0.5,
+    -0.1,
+    0
+   ]
+  },
+  {
+   "name": "shelf_B_small_decorated",
+   "category": null,
+   "size": [
+    1,
+    1.01,
+    0.57
+   ],
+   "min": [
+    -0.5,
+    -0.1,
+    0
+   ]
+  },
+  {
+   "name": "table_low",
+   "category": null,
+   "size": [
+    2.4,
+    0.5,
+    1.5
+   ],
+   "min": [
+    -1.2,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "table_medium",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "table_medium_long",
+   "category": null,
+   "size": [
+    3,
+    1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "table_small",
+   "category": null,
+   "size": [
+    1,
+    1,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  }
+ ]
+}

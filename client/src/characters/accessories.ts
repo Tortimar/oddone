@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import type { KitClass } from '@oddone/shared';
-import { flatPart, part, shade } from '../engine/render.ts';
+import { flatPart, part, shade } from '../engine/toon.ts';
 import { ANCHORS, type HeadAnchor } from './library.ts';
 
 /**

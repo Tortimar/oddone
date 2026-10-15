@@ -1,6 +1,6 @@
 import { io, type Socket } from 'socket.io-client';
 import {
-  JOIN_ERROR_TEXT, type CharacterConfig, type ClientToServerEvents, type JoinResult,
+  JOIN_ERROR_TEXT, type CharacterConfig, type MinigameSecret, type ClientToServerEvents, type Hit, type JoinResult, type MinigameAction, type MinigameTick,
   type RoomState, type ServerToClientEvents, type Transform,
 } from '@oddone/shared';
 
@@ -14,8 +14,15 @@ type GameSocket = Socket<ServerToClientEvents, ClientToServerEvents>;
 export interface NetworkHandlers {
   onState(state: RoomState): void;
   onMoved(id: string, t: Transform): void;
-  onGameStart(round: number): void;
   onConnectionChange(connected: boolean): void;
+  /** Positions du mini-jeu (squelettes, bots). */
+  onTick(tick: MinigameTick): void;
+  /** Rôle secret pour la quête en cours. */
+  onRole(role: { imposter: boolean; quest: string }): void;
+  /** Un coup sur le podium. */
+  onHit(hit: Hit): void;
+  /** Information secrète de mini-jeu (Coffres Piégés : ce que l'imposteur a vu). */
+  onSecret(s: MinigameSecret): void;
 }
 
 export class Network {
@@ -29,7 +36,10 @@ export class Network {
     this.socket = io({ autoConnect: true, transports: ['websocket', 'polling'] });
     this.socket.on('room:state', handlers.onState);
     this.socket.on('player:moved', handlers.onMoved);
-    this.socket.on('game:start', ({ round }) => handlers.onGameStart(round));
+    this.socket.on('mg:tick', handlers.onTick);
+    this.socket.on('role:secret', handlers.onRole);
+    this.socket.on('player:hit', handlers.onHit);
+    this.socket.on('mg:secret', handlers.onSecret);
     this.socket.on('connect', () => handlers.onConnectionChange(true));
     this.socket.on('disconnect', () => handlers.onConnectionChange(false));
   }
@@ -60,4 +70,12 @@ export class Network {
   sendMove(t: Transform): void { this.socket.volatile.emit('player:move', t); }
   takeSeat(seat: number): Promise<boolean> { return this.socket.timeout(5000).emitWithAck('seat:take', seat).catch(() => false); }
   leaveSeat(): void { this.socket.emit('seat:leave'); }
+  vote(optionId: string): void { this.socket.emit('vote:cast', optionId); }
+  addBot(): void { this.socket.emit('bot:add'); }
+  removeBot(id: string): void { this.socket.emit('bot:remove', id); }
+  minigameReady(): void { this.socket.emit('mg:ready'); }
+  hit(to: string, kick: boolean, dir: [number, number]): void { this.socket.emit('mg:hit', to, kick, dir); }
+  action(kind: MinigameAction, arg?: number): void { this.socket.emit('mg:action', kind, arg); }
+  /** Heure du serveur estimée (ms). */
+  serverNow(): number { return Date.now() + this.clockOffset; }
 }

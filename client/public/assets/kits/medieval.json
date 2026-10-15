@@ -1,0 +1,3101 @@
+{
+ "kit": "medieval",
+ "source": "KayKit-Medieval-Hexagon-Pack-1.0",
+ "license": "CC0",
+ "models": [
+  {
+   "name": "building_archeryrange_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.67,
+    1.79,
+    1.55
+   ],
+   "min": [
+    -0.8,
+    0,
+    -0.87
+   ]
+  },
+  {
+   "name": "building_barracks_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.44,
+    1.64,
+    1.57
+   ],
+   "min": [
+    -0.72,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_blacksmith_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.29,
+    0.99,
+    1.25
+   ],
+   "min": [
+    -0.63,
+    -0.01,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_castle_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.98,
+    3.98,
+    2.26
+   ],
+   "min": [
+    -0.99,
+    0,
+    -1.13
+   ]
+  },
+  {
+   "name": "building_church_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.03,
+    1.65,
+    1.16
+   ],
+   "min": [
+    -0.51,
+    0,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_home_A_blue",
+   "category": "buildings/blue",
+   "size": [
+    0.79,
+    0.93,
+    0.85
+   ],
+   "min": [
+    -0.4,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "building_home_B_blue",
+   "category": "buildings/blue",
+   "size": [
+    0.87,
+    1.28,
+    1.1
+   ],
+   "min": [
+    -0.44,
+    0,
+    -0.54
+   ]
+  },
+  {
+   "name": "building_lumbermill_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.37,
+    1.71,
+    1.19
+   ],
+   "min": [
+    -0.69,
+    0,
+    -0.46
+   ]
+  },
+  {
+   "name": "building_market_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.8,
+    0.98,
+    1.32
+   ],
+   "min": [
+    -0.9,
+    -0.01,
+    -0.71
+   ]
+  },
+  {
+   "name": "building_mine_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.61,
+    1.14,
+    1.92
+   ],
+   "min": [
+    -0.82,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "building_tavern_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.17,
+    1.4,
+    1.33
+   ],
+   "min": [
+    -0.59,
+    0,
+    -0.7
+   ]
+  },
+  {
+   "name": "building_tower_A_blue",
+   "category": "buildings/blue",
+   "size": [
+    0.99,
+    2.19,
+    1.15
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.57
+   ]
+  },
+  {
+   "name": "building_tower_B_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.2,
+    2.49,
+    1.38
+   ],
+   "min": [
+    -0.6,
+    0,
+    -0.69
+   ]
+  },
+  {
+   "name": "building_tower_base_blue",
+   "category": "buildings/blue",
+   "size": [
+    0.93,
+    1.5,
+    1.11
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.53
+   ]
+  },
+  {
+   "name": "building_tower_catapult_blue",
+   "category": "buildings/blue",
+   "size": [
+    0.93,
+    1.96,
+    1.3
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_watermill_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.05,
+    1.57,
+    1.24
+   ],
+   "min": [
+    -0.52,
+    -0.35,
+    -0.37
+   ]
+  },
+  {
+   "name": "building_well_blue",
+   "category": "buildings/blue",
+   "size": [
+    0.65,
+    0.83,
+    0.75
+   ],
+   "min": [
+    -0.31,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_windmill_blue",
+   "category": "buildings/blue",
+   "size": [
+    1.13,
+    1.46,
+    0.82
+   ],
+   "min": [
+    -0.56,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_archeryrange_green",
+   "category": "buildings/green",
+   "size": [
+    1.67,
+    1.79,
+    1.55
+   ],
+   "min": [
+    -0.8,
+    0,
+    -0.87
+   ]
+  },
+  {
+   "name": "building_barracks_green",
+   "category": "buildings/green",
+   "size": [
+    1.44,
+    1.64,
+    1.57
+   ],
+   "min": [
+    -0.72,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_blacksmith_green",
+   "category": "buildings/green",
+   "size": [
+    1.29,
+    0.99,
+    1.25
+   ],
+   "min": [
+    -0.63,
+    -0.01,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_castle_green",
+   "category": "buildings/green",
+   "size": [
+    1.98,
+    3.98,
+    2.26
+   ],
+   "min": [
+    -0.99,
+    0,
+    -1.13
+   ]
+  },
+  {
+   "name": "building_church_green",
+   "category": "buildings/green",
+   "size": [
+    1.03,
+    1.65,
+    1.16
+   ],
+   "min": [
+    -0.51,
+    0,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_home_A_green",
+   "category": "buildings/green",
+   "size": [
+    0.79,
+    0.93,
+    0.85
+   ],
+   "min": [
+    -0.4,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "building_home_B_green",
+   "category": "buildings/green",
+   "size": [
+    0.87,
+    1.28,
+    1.1
+   ],
+   "min": [
+    -0.44,
+    0,
+    -0.54
+   ]
+  },
+  {
+   "name": "building_lumbermill_green",
+   "category": "buildings/green",
+   "size": [
+    1.37,
+    1.71,
+    1.19
+   ],
+   "min": [
+    -0.69,
+    0,
+    -0.46
+   ]
+  },
+  {
+   "name": "building_market_green",
+   "category": "buildings/green",
+   "size": [
+    1.8,
+    0.98,
+    1.32
+   ],
+   "min": [
+    -0.9,
+    -0.01,
+    -0.71
+   ]
+  },
+  {
+   "name": "building_mine_green",
+   "category": "buildings/green",
+   "size": [
+    1.61,
+    1.14,
+    1.92
+   ],
+   "min": [
+    -0.82,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "building_tavern_green",
+   "category": "buildings/green",
+   "size": [
+    1.17,
+    1.4,
+    1.33
+   ],
+   "min": [
+    -0.59,
+    0,
+    -0.7
+   ]
+  },
+  {
+   "name": "building_tower_A_green",
+   "category": "buildings/green",
+   "size": [
+    0.99,
+    2.19,
+    1.15
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.57
+   ]
+  },
+  {
+   "name": "building_tower_B_green",
+   "category": "buildings/green",
+   "size": [
+    1.2,
+    2.49,
+    1.38
+   ],
+   "min": [
+    -0.6,
+    0,
+    -0.69
+   ]
+  },
+  {
+   "name": "building_tower_base_green",
+   "category": "buildings/green",
+   "size": [
+    0.93,
+    1.5,
+    1.11
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.53
+   ]
+  },
+  {
+   "name": "building_tower_catapult_green",
+   "category": "buildings/green",
+   "size": [
+    0.93,
+    1.96,
+    1.3
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_watermill_green",
+   "category": "buildings/green",
+   "size": [
+    1.05,
+    1.57,
+    1.24
+   ],
+   "min": [
+    -0.52,
+    -0.35,
+    -0.37
+   ]
+  },
+  {
+   "name": "building_well_green",
+   "category": "buildings/green",
+   "size": [
+    0.65,
+    0.83,
+    0.75
+   ],
+   "min": [
+    -0.31,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_windmill_green",
+   "category": "buildings/green",
+   "size": [
+    1.13,
+    1.46,
+    0.82
+   ],
+   "min": [
+    -0.56,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_bridge_A",
+   "category": "buildings/neutral",
+   "size": [
+    1.33,
+    1.25,
+    1.92
+   ],
+   "min": [
+    -0.67,
+    -1,
+    -0.96
+   ]
+  },
+  {
+   "name": "building_bridge_B",
+   "category": "buildings/neutral",
+   "size": [
+    1.33,
+    1.25,
+    1.92
+   ],
+   "min": [
+    -0.67,
+    -1,
+    -0.96
+   ]
+  },
+  {
+   "name": "building_destroyed",
+   "category": "buildings/neutral",
+   "size": [
+    1.54,
+    0.99,
+    1.31
+   ],
+   "min": [
+    -0.72,
+    -0.01,
+    -0.71
+   ]
+  },
+  {
+   "name": "building_dirt",
+   "category": "buildings/neutral",
+   "size": [
+    1.79,
+    0.09,
+    2.01
+   ],
+   "min": [
+    -0.9,
+    -0.02,
+    -1
+   ]
+  },
+  {
+   "name": "building_grain",
+   "category": "buildings/neutral",
+   "size": [
+    1.87,
+    0.39,
+    2.09
+   ],
+   "min": [
+    -0.94,
+    0,
+    -1.05
+   ]
+  },
+  {
+   "name": "building_scaffolding",
+   "category": "buildings/neutral",
+   "size": [
+    1.9,
+    1.3,
+    2.11
+   ],
+   "min": [
+    -0.93,
+    0,
+    -1.09
+   ]
+  },
+  {
+   "name": "building_stage_A",
+   "category": "buildings/neutral",
+   "size": [
+    1.05,
+    0.29,
+    0.88
+   ],
+   "min": [
+    -0.48,
+    -0.01,
+    -0.34
+   ]
+  },
+  {
+   "name": "building_stage_B",
+   "category": "buildings/neutral",
+   "size": [
+    1.02,
+    0.64,
+    1.13
+   ],
+   "min": [
+    -0.5,
+    -0.01,
+    -0.58
+   ]
+  },
+  {
+   "name": "building_stage_C",
+   "category": "buildings/neutral",
+   "size": [
+    1.16,
+    0.99,
+    1.13
+   ],
+   "min": [
+    -0.5,
+    -0.01,
+    -0.57
+   ]
+  },
+  {
+   "name": "fence_stone_straight",
+   "category": "buildings/neutral",
+   "size": [
+    0.2,
+    0.27,
+    1.15
+   ],
+   "min": [
+    -1.1,
+    -0.05,
+    -0.58
+   ]
+  },
+  {
+   "name": "fence_stone_straight_gate",
+   "category": "buildings/neutral",
+   "size": [
+    0.2,
+    0.3,
+    1.15
+   ],
+   "min": [
+    -1.1,
+    -0.05,
+    -0.58
+   ]
+  },
+  {
+   "name": "fence_wood_straight",
+   "category": "buildings/neutral",
+   "size": [
+    0.1,
+    0.55,
+    1.15
+   ],
+   "min": [
+    -1.05,
+    -0.05,
+    -0.58
+   ]
+  },
+  {
+   "name": "fence_wood_straight_gate",
+   "category": "buildings/neutral",
+   "size": [
+    0.14,
+    0.65,
+    1.15
+   ],
+   "min": [
+    -1.07,
+    -0.05,
+    -0.58
+   ]
+  },
+  {
+   "name": "projectile_catapult",
+   "category": "buildings/neutral",
+   "size": [
+    0.24,
+    0.28,
+    0.25
+   ],
+   "min": [
+    -0.12,
+    -0.14,
+    -0.13
+   ]
+  },
+  {
+   "name": "wall_corner_A_gate",
+   "category": "buildings/neutral",
+   "size": [
+    1.76,
+    1.42,
+    1.53
+   ],
+   "min": [
+    -1,
+    -0.05,
+    -1.07
+   ]
+  },
+  {
+   "name": "wall_corner_A_inside",
+   "category": "buildings/neutral",
+   "size": [
+    1.85,
+    1.1,
+    1.42
+   ],
+   "min": [
+    -1,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "wall_corner_A_outside",
+   "category": "buildings/neutral",
+   "size": [
+    1.76,
+    1.1,
+    1.43
+   ],
+   "min": [
+    -1,
+    0,
+    -1.07
+   ]
+  },
+  {
+   "name": "wall_corner_B_inside",
+   "category": "buildings/neutral",
+   "size": [
+    0.96,
+    1.1,
+    1.47
+   ],
+   "min": [
+    -1,
+    0,
+    -1.07
+   ]
+  },
+  {
+   "name": "wall_corner_B_outside",
+   "category": "buildings/neutral",
+   "size": [
+    0.96,
+    1.1,
+    1.35
+   ],
+   "min": [
+    -1,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "wall_straight",
+   "category": "buildings/neutral",
+   "size": [
+    2,
+    1.1,
+    0.8
+   ],
+   "min": [
+    -1,
+    0,
+    -0.4
+   ]
+  },
+  {
+   "name": "wall_straight_gate",
+   "category": "buildings/neutral",
+   "size": [
+    2,
+    1.41,
+    0.9
+   ],
+   "min": [
+    -1,
+    -0.05,
+    -0.4
+   ]
+  },
+  {
+   "name": "building_archeryrange_red",
+   "category": "buildings/red",
+   "size": [
+    1.67,
+    1.79,
+    1.55
+   ],
+   "min": [
+    -0.8,
+    0,
+    -0.87
+   ]
+  },
+  {
+   "name": "building_barracks_red",
+   "category": "buildings/red",
+   "size": [
+    1.44,
+    1.64,
+    1.57
+   ],
+   "min": [
+    -0.72,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_blacksmith_red",
+   "category": "buildings/red",
+   "size": [
+    1.29,
+    0.99,
+    1.25
+   ],
+   "min": [
+    -0.63,
+    -0.01,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_castle_red",
+   "category": "buildings/red",
+   "size": [
+    1.98,
+    3.98,
+    2.26
+   ],
+   "min": [
+    -0.99,
+    0,
+    -1.13
+   ]
+  },
+  {
+   "name": "building_church_red",
+   "category": "buildings/red",
+   "size": [
+    1.03,
+    1.65,
+    1.16
+   ],
+   "min": [
+    -0.51,
+    0,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_home_A_red",
+   "category": "buildings/red",
+   "size": [
+    0.79,
+    0.93,
+    0.85
+   ],
+   "min": [
+    -0.4,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "building_home_B_red",
+   "category": "buildings/red",
+   "size": [
+    0.87,
+    1.28,
+    1.1
+   ],
+   "min": [
+    -0.44,
+    0,
+    -0.54
+   ]
+  },
+  {
+   "name": "building_lumbermill_red",
+   "category": "buildings/red",
+   "size": [
+    1.37,
+    1.71,
+    1.19
+   ],
+   "min": [
+    -0.69,
+    0,
+    -0.46
+   ]
+  },
+  {
+   "name": "building_market_red",
+   "category": "buildings/red",
+   "size": [
+    1.8,
+    0.98,
+    1.32
+   ],
+   "min": [
+    -0.9,
+    -0.01,
+    -0.71
+   ]
+  },
+  {
+   "name": "building_mine_red",
+   "category": "buildings/red",
+   "size": [
+    1.61,
+    1.14,
+    1.92
+   ],
+   "min": [
+    -0.82,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "building_tavern_red",
+   "category": "buildings/red",
+   "size": [
+    1.17,
+    1.4,
+    1.33
+   ],
+   "min": [
+    -0.59,
+    0,
+    -0.7
+   ]
+  },
+  {
+   "name": "building_tower_A_red",
+   "category": "buildings/red",
+   "size": [
+    0.99,
+    2.19,
+    1.15
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.57
+   ]
+  },
+  {
+   "name": "building_tower_B_red",
+   "category": "buildings/red",
+   "size": [
+    1.2,
+    2.49,
+    1.38
+   ],
+   "min": [
+    -0.6,
+    0,
+    -0.69
+   ]
+  },
+  {
+   "name": "building_tower_base_red",
+   "category": "buildings/red",
+   "size": [
+    0.93,
+    1.5,
+    1.11
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.53
+   ]
+  },
+  {
+   "name": "building_tower_catapult_red",
+   "category": "buildings/red",
+   "size": [
+    0.93,
+    1.96,
+    1.3
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_watermill_red",
+   "category": "buildings/red",
+   "size": [
+    1.05,
+    1.57,
+    1.24
+   ],
+   "min": [
+    -0.52,
+    -0.35,
+    -0.37
+   ]
+  },
+  {
+   "name": "building_well_red",
+   "category": "buildings/red",
+   "size": [
+    0.65,
+    0.83,
+    0.75
+   ],
+   "min": [
+    -0.31,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_windmill_red",
+   "category": "buildings/red",
+   "size": [
+    1.13,
+    1.46,
+    0.82
+   ],
+   "min": [
+    -0.56,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_archeryrange_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.67,
+    1.79,
+    1.55
+   ],
+   "min": [
+    -0.8,
+    0,
+    -0.87
+   ]
+  },
+  {
+   "name": "building_barracks_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.44,
+    1.64,
+    1.57
+   ],
+   "min": [
+    -0.72,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_blacksmith_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.29,
+    0.99,
+    1.25
+   ],
+   "min": [
+    -0.63,
+    -0.01,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_castle_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.98,
+    3.98,
+    2.26
+   ],
+   "min": [
+    -0.99,
+    0,
+    -1.13
+   ]
+  },
+  {
+   "name": "building_church_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.03,
+    1.65,
+    1.16
+   ],
+   "min": [
+    -0.51,
+    0,
+    -0.56
+   ]
+  },
+  {
+   "name": "building_home_A_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    0.79,
+    0.93,
+    0.85
+   ],
+   "min": [
+    -0.4,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "building_home_B_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    0.87,
+    1.28,
+    1.1
+   ],
+   "min": [
+    -0.44,
+    0,
+    -0.54
+   ]
+  },
+  {
+   "name": "building_lumbermill_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.37,
+    1.71,
+    1.19
+   ],
+   "min": [
+    -0.69,
+    0,
+    -0.46
+   ]
+  },
+  {
+   "name": "building_market_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.8,
+    0.98,
+    1.32
+   ],
+   "min": [
+    -0.9,
+    -0.01,
+    -0.71
+   ]
+  },
+  {
+   "name": "building_mine_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.61,
+    1.14,
+    1.92
+   ],
+   "min": [
+    -0.82,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "building_tavern_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.17,
+    1.4,
+    1.33
+   ],
+   "min": [
+    -0.59,
+    0,
+    -0.7
+   ]
+  },
+  {
+   "name": "building_tower_A_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    0.99,
+    2.19,
+    1.15
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.57
+   ]
+  },
+  {
+   "name": "building_tower_B_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.2,
+    2.49,
+    1.38
+   ],
+   "min": [
+    -0.6,
+    0,
+    -0.69
+   ]
+  },
+  {
+   "name": "building_tower_base_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    0.93,
+    1.5,
+    1.11
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.53
+   ]
+  },
+  {
+   "name": "building_tower_catapult_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    0.93,
+    1.96,
+    1.3
+   ],
+   "min": [
+    -0.46,
+    0,
+    -0.72
+   ]
+  },
+  {
+   "name": "building_watermill_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.05,
+    1.57,
+    1.24
+   ],
+   "min": [
+    -0.52,
+    -0.35,
+    -0.37
+   ]
+  },
+  {
+   "name": "building_well_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    0.65,
+    0.83,
+    0.75
+   ],
+   "min": [
+    -0.31,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "building_windmill_yellow",
+   "category": "buildings/yellow",
+   "size": [
+    1.13,
+    1.46,
+    0.82
+   ],
+   "min": [
+    -0.56,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "cloud_big",
+   "category": "decoration/nature",
+   "size": [
+    3.61,
+    1.95,
+    2.24
+   ],
+   "min": [
+    -1.8,
+    -0.88,
+    -1.09
+   ]
+  },
+  {
+   "name": "cloud_small",
+   "category": "decoration/nature",
+   "size": [
+    2.34,
+    1.84,
+    1.79
+   ],
+   "min": [
+    -1.16,
+    -0.91,
+    -0.96
+   ]
+  },
+  {
+   "name": "hill_single_A",
+   "category": "decoration/nature",
+   "size": [
+    1.11,
+    0.31,
+    0.81
+   ],
+   "min": [
+    -0.52,
+    0,
+    -0.4
+   ]
+  },
+  {
+   "name": "hill_single_B",
+   "category": "decoration/nature",
+   "size": [
+    0.99,
+    0.42,
+    1.36
+   ],
+   "min": [
+    -0.54,
+    0,
+    -0.77
+   ]
+  },
+  {
+   "name": "hill_single_C",
+   "category": "decoration/nature",
+   "size": [
+    1.02,
+    0.59,
+    1.32
+   ],
+   "min": [
+    -0.51,
+    0,
+    -0.71
+   ]
+  },
+  {
+   "name": "hills_A",
+   "category": "decoration/nature",
+   "size": [
+    1.76,
+    0.79,
+    1.74
+   ],
+   "min": [
+    -0.82,
+    0,
+    -0.83
+   ]
+  },
+  {
+   "name": "hills_A_trees",
+   "category": "decoration/nature",
+   "size": [
+    1.76,
+    1.33,
+    1.74
+   ],
+   "min": [
+    -0.82,
+    0,
+    -0.83
+   ]
+  },
+  {
+   "name": "hills_B",
+   "category": "decoration/nature",
+   "size": [
+    1.47,
+    0.37,
+    1.62
+   ],
+   "min": [
+    -0.77,
+    0,
+    -0.89
+   ]
+  },
+  {
+   "name": "hills_B_trees",
+   "category": "decoration/nature",
+   "size": [
+    1.47,
+    1.37,
+    1.62
+   ],
+   "min": [
+    -0.77,
+    0,
+    -0.89
+   ]
+  },
+  {
+   "name": "hills_C",
+   "category": "decoration/nature",
+   "size": [
+    1.53,
+    0.55,
+    1.47
+   ],
+   "min": [
+    -0.68,
+    0,
+    -0.55
+   ]
+  },
+  {
+   "name": "hills_C_trees",
+   "category": "decoration/nature",
+   "size": [
+    1.7,
+    1.3,
+    1.9
+   ],
+   "min": [
+    -0.85,
+    -0.02,
+    -0.98
+   ]
+  },
+  {
+   "name": "mountain_A",
+   "category": "decoration/nature",
+   "size": [
+    1.8,
+    1.43,
+    1.88
+   ],
+   "min": [
+    -0.89,
+    0,
+    -0.94
+   ]
+  },
+  {
+   "name": "mountain_A_grass",
+   "category": "decoration/nature",
+   "size": [
+    1.8,
+    1.5,
+    1.88
+   ],
+   "min": [
+    -0.89,
+    0,
+    -0.94
+   ]
+  },
+  {
+   "name": "mountain_A_grass_trees",
+   "category": "decoration/nature",
+   "size": [
+    1.86,
+    2.18,
+    1.88
+   ],
+   "min": [
+    -0.89,
+    0,
+    -0.94
+   ]
+  },
+  {
+   "name": "mountain_B",
+   "category": "decoration/nature",
+   "size": [
+    1.8,
+    1.77,
+    1.88
+   ],
+   "min": [
+    -0.89,
+    0,
+    -0.93
+   ]
+  },
+  {
+   "name": "mountain_B_grass",
+   "category": "decoration/nature",
+   "size": [
+    1.8,
+    1.84,
+    1.88
+   ],
+   "min": [
+    -0.89,
+    0,
+    -0.93
+   ]
+  },
+  {
+   "name": "mountain_B_grass_trees",
+   "category": "decoration/nature",
+   "size": [
+    1.8,
+    2.5,
+    1.88
+   ],
+   "min": [
+    -0.89,
+    0,
+    -0.93
+   ]
+  },
+  {
+   "name": "mountain_C",
+   "category": "decoration/nature",
+   "size": [
+    1.76,
+    1.51,
+    2.02
+   ],
+   "min": [
+    -0.85,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "mountain_C_grass",
+   "category": "decoration/nature",
+   "size": [
+    1.76,
+    1.55,
+    2.02
+   ],
+   "min": [
+    -0.85,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "mountain_C_grass_trees",
+   "category": "decoration/nature",
+   "size": [
+    1.76,
+    2.11,
+    2.02
+   ],
+   "min": [
+    -0.85,
+    0,
+    -1.02
+   ]
+  },
+  {
+   "name": "rock_single_A",
+   "category": "decoration/nature",
+   "size": [
+    0.3,
+    0.07,
+    0.28
+   ],
+   "min": [
+    -0.15,
+    0,
+    -0.16
+   ]
+  },
+  {
+   "name": "rock_single_B",
+   "category": "decoration/nature",
+   "size": [
+    0.29,
+    0.13,
+    0.25
+   ],
+   "min": [
+    -0.14,
+    0,
+    -0.13
+   ]
+  },
+  {
+   "name": "rock_single_C",
+   "category": "decoration/nature",
+   "size": [
+    0.34,
+    0.19,
+    0.34
+   ],
+   "min": [
+    -0.19,
+    0,
+    -0.18
+   ]
+  },
+  {
+   "name": "rock_single_D",
+   "category": "decoration/nature",
+   "size": [
+    0.29,
+    0.16,
+    0.25
+   ],
+   "min": [
+    -0.14,
+    0,
+    -0.13
+   ]
+  },
+  {
+   "name": "rock_single_E",
+   "category": "decoration/nature",
+   "size": [
+    0.49,
+    0.19,
+    0.35
+   ],
+   "min": [
+    -0.26,
+    0,
+    -0.18
+   ]
+  },
+  {
+   "name": "tree_single_A",
+   "category": "decoration/nature",
+   "size": [
+    0.57,
+    1.2,
+    0.55
+   ],
+   "min": [
+    -0.29,
+    -0.1,
+    -0.3
+   ]
+  },
+  {
+   "name": "tree_single_A_cut",
+   "category": "decoration/nature",
+   "size": [
+    0.17,
+    0.33,
+    0.16
+   ],
+   "min": [
+    -0.08,
+    -0.1,
+    -0.09
+   ]
+  },
+  {
+   "name": "tree_single_B",
+   "category": "decoration/nature",
+   "size": [
+    0.68,
+    1.21,
+    0.72
+   ],
+   "min": [
+    -0.34,
+    -0.1,
+    -0.36
+   ]
+  },
+  {
+   "name": "tree_single_B_cut",
+   "category": "decoration/nature",
+   "size": [
+    0.18,
+    0.24,
+    0.19
+   ],
+   "min": [
+    -0.09,
+    -0.1,
+    -0.1
+   ]
+  },
+  {
+   "name": "trees_A_cut",
+   "category": "decoration/nature",
+   "size": [
+    1.66,
+    0.21,
+    1.68
+   ],
+   "min": [
+    -0.84,
+    -0.01,
+    -0.85
+   ]
+  },
+  {
+   "name": "trees_A_large",
+   "category": "decoration/nature",
+   "size": [
+    1.95,
+    0.93,
+    1.97
+   ],
+   "min": [
+    -0.97,
+    -0.01,
+    -0.99
+   ]
+  },
+  {
+   "name": "trees_A_medium",
+   "category": "decoration/nature",
+   "size": [
+    1.75,
+    1.3,
+    1.81
+   ],
+   "min": [
+    -0.86,
+    -0.02,
+    -0.87
+   ]
+  },
+  {
+   "name": "trees_A_small",
+   "category": "decoration/nature",
+   "size": [
+    1.43,
+    1.11,
+    1.44
+   ],
+   "min": [
+    -0.76,
+    -0.02,
+    -0.73
+   ]
+  },
+  {
+   "name": "trees_B_cut",
+   "category": "decoration/nature",
+   "size": [
+    1.4,
+    0.17,
+    1.46
+   ],
+   "min": [
+    -0.67,
+    -0.02,
+    -0.74
+   ]
+  },
+  {
+   "name": "trees_B_large",
+   "category": "decoration/nature",
+   "size": [
+    1.85,
+    1.17,
+    1.93
+   ],
+   "min": [
+    -0.91,
+    -0.02,
+    -0.99
+   ]
+  },
+  {
+   "name": "trees_B_medium",
+   "category": "decoration/nature",
+   "size": [
+    1.86,
+    1.17,
+    1.83
+   ],
+   "min": [
+    -0.89,
+    -0.02,
+    -0.97
+   ]
+  },
+  {
+   "name": "trees_B_small",
+   "category": "decoration/nature",
+   "size": [
+    1.33,
+    0.92,
+    1.14
+   ],
+   "min": [
+    -0.69,
+    -0.01,
+    -0.5
+   ]
+  },
+  {
+   "name": "waterlily_A",
+   "category": "decoration/nature",
+   "size": [
+    0.15,
+    0.02,
+    0.14
+   ],
+   "min": [
+    -0.07,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "waterlily_B",
+   "category": "decoration/nature",
+   "size": [
+    0.21,
+    0.02,
+    0.21
+   ],
+   "min": [
+    -0.11,
+    0,
+    -0.11
+   ]
+  },
+  {
+   "name": "waterplant_A",
+   "category": "decoration/nature",
+   "size": [
+    0.2,
+    0.13,
+    0.22
+   ],
+   "min": [
+    -0.12,
+    -0.02,
+    -0.12
+   ]
+  },
+  {
+   "name": "waterplant_B",
+   "category": "decoration/nature",
+   "size": [
+    0.16,
+    0.25,
+    0.1
+   ],
+   "min": [
+    -0.08,
+    -0.02,
+    -0.06
+   ]
+  },
+  {
+   "name": "waterplant_C",
+   "category": "decoration/nature",
+   "size": [
+    0.2,
+    0.25,
+    0.22
+   ],
+   "min": [
+    -0.12,
+    -0.02,
+    -0.12
+   ]
+  },
+  {
+   "name": "barrel",
+   "category": "decoration/props",
+   "size": [
+    0.2,
+    0.21,
+    0.2
+   ],
+   "min": [
+    -0.1,
+    0,
+    -0.1
+   ]
+  },
+  {
+   "name": "bucket_arrows",
+   "category": "decoration/props",
+   "size": [
+    0.14,
+    0.23,
+    0.14
+   ],
+   "min": [
+    -0.07,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "bucket_empty",
+   "category": "decoration/props",
+   "size": [
+    0.14,
+    0.13,
+    0.14
+   ],
+   "min": [
+    -0.07,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "bucket_water",
+   "category": "decoration/props",
+   "size": [
+    0.14,
+    0.11,
+    0.14
+   ],
+   "min": [
+    -0.07,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "crate_A_big",
+   "category": "decoration/props",
+   "size": [
+    0.21,
+    0.21,
+    0.21
+   ],
+   "min": [
+    -0.11,
+    0,
+    -0.11
+   ]
+  },
+  {
+   "name": "crate_A_small",
+   "category": "decoration/props",
+   "size": [
+    0.14,
+    0.14,
+    0.14
+   ],
+   "min": [
+    -0.07,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "crate_B_big",
+   "category": "decoration/props",
+   "size": [
+    0.21,
+    0.21,
+    0.21
+   ],
+   "min": [
+    -0.11,
+    0,
+    -0.11
+   ]
+  },
+  {
+   "name": "crate_B_small",
+   "category": "decoration/props",
+   "size": [
+    0.14,
+    0.14,
+    0.14
+   ],
+   "min": [
+    -0.07,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "crate_long_A",
+   "category": "decoration/props",
+   "size": [
+    0.4,
+    0.15,
+    0.2
+   ],
+   "min": [
+    -0.2,
+    0,
+    -0.1
+   ]
+  },
+  {
+   "name": "crate_long_B",
+   "category": "decoration/props",
+   "size": [
+    0.4,
+    0.15,
+    0.2
+   ],
+   "min": [
+    -0.2,
+    0,
+    -0.1
+   ]
+  },
+  {
+   "name": "crate_long_C",
+   "category": "decoration/props",
+   "size": [
+    0.4,
+    0.2,
+    0.2
+   ],
+   "min": [
+    -0.2,
+    0,
+    -0.1
+   ]
+  },
+  {
+   "name": "crate_long_empty",
+   "category": "decoration/props",
+   "size": [
+    0.4,
+    0.15,
+    0.2
+   ],
+   "min": [
+    -0.2,
+    0,
+    -0.1
+   ]
+  },
+  {
+   "name": "crate_open",
+   "category": "decoration/props",
+   "size": [
+    0.33,
+    0.21,
+    0.2
+   ],
+   "min": [
+    -0.1,
+    -0.01,
+    -0.1
+   ]
+  },
+  {
+   "name": "flag_blue",
+   "category": "decoration/props",
+   "size": [
+    0.06,
+    0.28,
+    0.26
+   ],
+   "min": [
+    -0.03,
+    0,
+    -0.24
+   ]
+  },
+  {
+   "name": "flag_green",
+   "category": "decoration/props",
+   "size": [
+    0.06,
+    0.28,
+    0.26
+   ],
+   "min": [
+    -0.03,
+    0,
+    -0.24
+   ]
+  },
+  {
+   "name": "flag_red",
+   "category": "decoration/props",
+   "size": [
+    0.06,
+    0.28,
+    0.26
+   ],
+   "min": [
+    -0.03,
+    0,
+    -0.24
+   ]
+  },
+  {
+   "name": "flag_yellow",
+   "category": "decoration/props",
+   "size": [
+    0.06,
+    0.28,
+    0.26
+   ],
+   "min": [
+    -0.03,
+    0,
+    -0.24
+   ]
+  },
+  {
+   "name": "ladder",
+   "category": "decoration/props",
+   "size": [
+    0.25,
+    0.77,
+    0.05
+   ],
+   "min": [
+    -0.13,
+    0,
+    -0.02
+   ]
+  },
+  {
+   "name": "pallet",
+   "category": "decoration/props",
+   "size": [
+    0.3,
+    0.08,
+    0.3
+   ],
+   "min": [
+    -0.15,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "resource_lumber",
+   "category": "decoration/props",
+   "size": [
+    0.69,
+    0.21,
+    0.33
+   ],
+   "min": [
+    -0.34,
+    0,
+    -0.16
+   ]
+  },
+  {
+   "name": "resource_stone",
+   "category": "decoration/props",
+   "size": [
+    0.42,
+    0.28,
+    0.36
+   ],
+   "min": [
+    -0.21,
+    0,
+    -0.18
+   ]
+  },
+  {
+   "name": "sack",
+   "category": "decoration/props",
+   "size": [
+    0.11,
+    0.06,
+    0.16
+   ],
+   "min": [
+    -0.05,
+    0,
+    -0.09
+   ]
+  },
+  {
+   "name": "target",
+   "category": "decoration/props",
+   "size": [
+    0.24,
+    0.3,
+    0.14
+   ],
+   "min": [
+    -0.12,
+    0,
+    -0.1
+   ]
+  },
+  {
+   "name": "tent",
+   "category": "decoration/props",
+   "size": [
+    0.52,
+    0.52,
+    0.52
+   ],
+   "min": [
+    -0.26,
+    0,
+    -0.26
+   ]
+  },
+  {
+   "name": "weaponrack",
+   "category": "decoration/props",
+   "size": [
+    0.2,
+    0.24,
+    0.13
+   ],
+   "min": [
+    -0.1,
+    0,
+    -0.07
+   ]
+  },
+  {
+   "name": "wheelbarrow",
+   "category": "decoration/props",
+   "size": [
+    0.24,
+    0.19,
+    0.51
+   ],
+   "min": [
+    -0.12,
+    0,
+    -0.21
+   ]
+  },
+  {
+   "name": "hex_grass",
+   "category": "tiles/base",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_grass_bottom",
+   "category": "tiles/base",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_grass_sloped_high",
+   "category": "tiles/base",
+   "size": [
+    2,
+    2,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_grass_sloped_low",
+   "category": "tiles/base",
+   "size": [
+    2,
+    1.5,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_water",
+   "category": "tiles/base",
+   "size": [
+    2,
+    0.8,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_A",
+   "category": "tiles/coast",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_B",
+   "category": "tiles/coast",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_C",
+   "category": "tiles/coast",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_D",
+   "category": "tiles/coast",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_E",
+   "category": "tiles/coast",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_A_waterless",
+   "category": "tiles/coast/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_B_waterless",
+   "category": "tiles/coast/waterless",
+   "size": [
+    2,
+    1,
+    1.73
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_C_waterless",
+   "category": "tiles/coast/waterless",
+   "size": [
+    2,
+    1,
+    1.73
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_D_waterless",
+   "category": "tiles/coast/waterless",
+   "size": [
+    1,
+    1,
+    1.73
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_coast_E_waterless",
+   "category": "tiles/coast/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_A",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_A_curvy",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_B",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_C",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_D",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_E",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_F",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_G",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_H",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_I",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_J",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_K",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_L",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_crossing_A",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_crossing_B",
+   "category": "tiles/rivers",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_A_curvy_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_A_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_B_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_C_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_D_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_E_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_F_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_G_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_H_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_I_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_J_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_K_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_L_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_crossing_A_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_river_crossing_B_waterless",
+   "category": "tiles/rivers/waterless",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_A",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_A_sloped_high",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    2,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_A_sloped_low",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1.5,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_B",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_C",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_D",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_E",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_F",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_G",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_H",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_I",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_J",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_K",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_L",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  },
+  {
+   "name": "hex_road_M",
+   "category": "tiles/roads",
+   "size": [
+    2,
+    1,
+    2.31
+   ],
+   "min": [
+    -1,
+    -1,
+    -1.15
+   ]
+  }
+ ]
+}

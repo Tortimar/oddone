@@ -81,3 +81,20 @@ export function sanitizeName(input: unknown): string {
   const s = typeof input === 'string' ? input.replace(INVISIBLE, '').trim().slice(0, MAX_NAME_LENGTH) : '';
   return s || 'Aventurier';
 }
+
+const pick = <T>(a: readonly T[], rnd: () => number) => a[Math.floor(rnd() * a.length)];
+const maybe = (a: readonly Option[], p: number, rnd: () => number) => (rnd() < p ? pick(a.slice(1), rnd)[0] : 'none');
+
+/** Tenue tirée au hasard (bouton « Aléatoire » de l'atelier, bots). */
+export function randomConfig(rnd: () => number = Math.random): CharacterConfig {
+  return {
+    body: pick(BODIES, rnd)[0], head: pick(HEADS, rnd)[0], hat: maybe(HATS, 0.4, rnd), cape: maybe(CAPES, 0.6, rnd),
+    hue: pick(HUES, rnd), skin: pick(SKINS, rnd), top: maybe(TOP_ACC, 0.4, rnd), face: maybe(FACE_ACC, 0.5, rnd),
+    // (le gabarit et les objets en main ne se choisissent plus à l'atelier : taille normale, mains vides)
+    neck: maybe(NECK_ACC, 0.4, rnd), back: maybe(BACK_ACC, 0.4, rnd), right: 'none',
+    left: 'none', acol: pick(ACCESSORY_COLORS, rnd), size: '1',
+  };
+}
+
+/** Noms des bots de test. */
+export const BOT_NAMES: readonly string[] = ['Bot Gaston', 'Bot Ysolde', 'Bot Bertrand', 'Bot Mélusine', 'Bot Perceval', 'Bot Guenièvre', 'Bot Tristan', 'Bot Ondine'];

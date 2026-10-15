@@ -1,0 +1,2023 @@
+{
+ "kit": "restaurant",
+ "source": "KayKit-Restaurant-Bits-1.0",
+ "license": "CC0",
+ "models": [
+  {
+   "name": "bowl",
+   "category": null,
+   "size": [
+    0.95,
+    0.3,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.48
+   ]
+  },
+  {
+   "name": "bowl_dirty",
+   "category": null,
+   "size": [
+    0.95,
+    0.3,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.48
+   ]
+  },
+  {
+   "name": "bowl_small",
+   "category": null,
+   "size": [
+    0.75,
+    0.3,
+    0.75
+   ],
+   "min": [
+    -0.37,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "chair_A",
+   "category": null,
+   "size": [
+    0.75,
+    1.21,
+    0.8
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.42
+   ]
+  },
+  {
+   "name": "chair_B",
+   "category": null,
+   "size": [
+    0.75,
+    1.21,
+    0.8
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.42
+   ]
+  },
+  {
+   "name": "chair_stool",
+   "category": null,
+   "size": [
+    0.75,
+    0.5,
+    0.75
+   ],
+   "min": [
+    -0.37,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "crate",
+   "category": null,
+   "size": [
+    2,
+    0.8,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_buns",
+   "category": null,
+   "size": [
+    2,
+    0.8,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_carrots",
+   "category": null,
+   "size": [
+    2,
+    0.94,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_cheese",
+   "category": null,
+   "size": [
+    2,
+    0.95,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_ham",
+   "category": null,
+   "size": [
+    2,
+    0.89,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_lettuce",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_lid",
+   "category": null,
+   "size": [
+    2,
+    0.2,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_onions",
+   "category": null,
+   "size": [
+    2,
+    0.92,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_potatoes",
+   "category": null,
+   "size": [
+    2,
+    0.97,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_steak",
+   "category": null,
+   "size": [
+    2,
+    0.88,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "crate_tomatoes",
+   "category": null,
+   "size": [
+    2,
+    0.92,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "cuttingboard",
+   "category": null,
+   "size": [
+    1.5,
+    0.15,
+    1
+   ],
+   "min": [
+    -0.75,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "dishrack",
+   "category": null,
+   "size": [
+    1.2,
+    0.6,
+    1.2
+   ],
+   "min": [
+    -0.6,
+    0,
+    -0.6
+   ]
+  },
+  {
+   "name": "dishrack_plates",
+   "category": null,
+   "size": [
+    1.2,
+    1.1,
+    1.2
+   ],
+   "min": [
+    -0.6,
+    0,
+    -0.6
+   ]
+  },
+  {
+   "name": "door_A",
+   "category": null,
+   "size": [
+    1.6,
+    2.8,
+    0.77
+   ],
+   "min": [
+    0,
+    0,
+    -0.39
+   ]
+  },
+  {
+   "name": "door_B",
+   "category": null,
+   "size": [
+    1.6,
+    2.8,
+    0.77
+   ],
+   "min": [
+    0,
+    0,
+    -0.39
+   ]
+  },
+  {
+   "name": "extractorhood",
+   "category": null,
+   "size": [
+    2,
+    2,
+    1.61
+   ],
+   "min": [
+    -1,
+    2,
+    0
+   ]
+  },
+  {
+   "name": "floor_kitchen",
+   "category": null,
+   "size": [
+    4,
+    0.5,
+    4
+   ],
+   "min": [
+    -2,
+    0,
+    -2
+   ]
+  },
+  {
+   "name": "floor_kitchen_small",
+   "category": null,
+   "size": [
+    2,
+    0.5,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "food_burger",
+   "category": null,
+   "size": [
+    0.95,
+    0.86,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "food_dinner",
+   "category": null,
+   "size": [
+    1.04,
+    0.91,
+    0.95
+   ],
+   "min": [
+    -0.52,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "food_ingredient_bun",
+   "category": null,
+   "size": [
+    0.7,
+    0.51,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_bun_bottom",
+   "category": null,
+   "size": [
+    0.69,
+    0.2,
+    0.69
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_bun_top",
+   "category": null,
+   "size": [
+    0.7,
+    0.31,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_burger_cooked",
+   "category": null,
+   "size": [
+    0.7,
+    0.2,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_burger_trash",
+   "category": null,
+   "size": [
+    0.7,
+    0.2,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_burger_uncooked",
+   "category": null,
+   "size": [
+    0.7,
+    0.2,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_carrot",
+   "category": null,
+   "size": [
+    0.56,
+    1.27,
+    0.55
+   ],
+   "min": [
+    -0.28,
+    -0.59,
+    -0.28
+   ]
+  },
+  {
+   "name": "food_ingredient_carrot_chopped",
+   "category": null,
+   "size": [
+    1.33,
+    0.56,
+    0.57
+   ],
+   "min": [
+    -0.88,
+    -0.01,
+    -0.28
+   ]
+  },
+  {
+   "name": "food_ingredient_carrot_pieces",
+   "category": null,
+   "size": [
+    0.54,
+    0.32,
+    0.72
+   ],
+   "min": [
+    -0.39,
+    0.02,
+    -0.33
+   ]
+  },
+  {
+   "name": "food_ingredient_cheese",
+   "category": null,
+   "size": [
+    0.98,
+    0.5,
+    0.72
+   ],
+   "min": [
+    -0.34,
+    0,
+    -0.36
+   ]
+  },
+  {
+   "name": "food_ingredient_cheese_chopped",
+   "category": null,
+   "size": [
+    1.02,
+    0.5,
+    0.72
+   ],
+   "min": [
+    -0.67,
+    0,
+    -0.36
+   ]
+  },
+  {
+   "name": "food_ingredient_cheese_slice",
+   "category": null,
+   "size": [
+    0.82,
+    0.11,
+    0.82
+   ],
+   "min": [
+    -0.41,
+    -0.09,
+    -0.41
+   ]
+  },
+  {
+   "name": "food_ingredient_ham",
+   "category": null,
+   "size": [
+    1.39,
+    0.83,
+    0.83
+   ],
+   "min": [
+    -0.5,
+    -0.41,
+    -0.41
+   ]
+  },
+  {
+   "name": "food_ingredient_ham_cooked",
+   "category": null,
+   "size": [
+    1.39,
+    0.83,
+    0.83
+   ],
+   "min": [
+    -0.5,
+    -0.41,
+    -0.41
+   ]
+  },
+  {
+   "name": "food_ingredient_ham_trash",
+   "category": null,
+   "size": [
+    1.39,
+    0.83,
+    0.83
+   ],
+   "min": [
+    -0.5,
+    -0.41,
+    -0.41
+   ]
+  },
+  {
+   "name": "food_ingredient_lettuce",
+   "category": null,
+   "size": [
+    1.1,
+    0.82,
+    1.13
+   ],
+   "min": [
+    -0.55,
+    -0.01,
+    -0.62
+   ]
+  },
+  {
+   "name": "food_ingredient_lettuce_chopped",
+   "category": null,
+   "size": [
+    1.8,
+    0.81,
+    1.21
+   ],
+   "min": [
+    -0.58,
+    -0.03,
+    -0.62
+   ]
+  },
+  {
+   "name": "food_ingredient_lettuce_slice",
+   "category": null,
+   "size": [
+    0.81,
+    0.09,
+    0.81
+   ],
+   "min": [
+    -0.4,
+    -0.03,
+    -0.4
+   ]
+  },
+  {
+   "name": "food_ingredient_onion",
+   "category": null,
+   "size": [
+    0.75,
+    0.86,
+    0.75
+   ],
+   "min": [
+    -0.37,
+    -0.01,
+    -0.37
+   ]
+  },
+  {
+   "name": "food_ingredient_onion_chopped",
+   "category": null,
+   "size": [
+    1.23,
+    0.75,
+    0.75
+   ],
+   "min": [
+    -0.65,
+    -0.02,
+    -0.39
+   ]
+  },
+  {
+   "name": "food_ingredient_onion_rings",
+   "category": null,
+   "size": [
+    0.78,
+    0.11,
+    0.73
+   ],
+   "min": [
+    -0.38,
+    -0.03,
+    -0.39
+   ]
+  },
+  {
+   "name": "food_ingredient_potato",
+   "category": null,
+   "size": [
+    0.6,
+    0.78,
+    0.68
+   ],
+   "min": [
+    -0.35,
+    -0.39,
+    -0.34
+   ]
+  },
+  {
+   "name": "food_ingredient_potato_chopped",
+   "category": null,
+   "size": [
+    1.05,
+    0.6,
+    0.7
+   ],
+   "min": [
+    -0.68,
+    -0.02,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_potato_mashed",
+   "category": null,
+   "size": [
+    0.6,
+    0.21,
+    0.64
+   ],
+   "min": [
+    -0.18,
+    0.03,
+    -0.42
+   ]
+  },
+  {
+   "name": "food_ingredient_steak",
+   "category": null,
+   "size": [
+    1.05,
+    0.28,
+    0.9
+   ],
+   "min": [
+    -0.52,
+    -0.04,
+    -0.45
+   ]
+  },
+  {
+   "name": "food_ingredient_steak_pieces",
+   "category": null,
+   "size": [
+    0.65,
+    0.43,
+    0.62
+   ],
+   "min": [
+    -0.31,
+    -0.02,
+    -0.32
+   ]
+  },
+  {
+   "name": "food_ingredient_tomato",
+   "category": null,
+   "size": [
+    0.75,
+    0.7,
+    0.75
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "food_ingredient_tomato_slice",
+   "category": null,
+   "size": [
+    0.65,
+    0.1,
+    0.65
+   ],
+   "min": [
+    -0.32,
+    0,
+    -0.32
+   ]
+  },
+  {
+   "name": "food_ingredient_tomato_slices",
+   "category": null,
+   "size": [
+    0.76,
+    0.3,
+    0.65
+   ],
+   "min": [
+    -0.35,
+    0,
+    -0.32
+   ]
+  },
+  {
+   "name": "food_ingredient_vegetableburger_cooked",
+   "category": null,
+   "size": [
+    0.73,
+    0.22,
+    0.72
+   ],
+   "min": [
+    -0.36,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_ingredient_vegetableburger_uncooked",
+   "category": null,
+   "size": [
+    0.73,
+    0.22,
+    0.72
+   ],
+   "min": [
+    -0.36,
+    0,
+    -0.35
+   ]
+  },
+  {
+   "name": "food_stew",
+   "category": null,
+   "size": [
+    0.95,
+    0.37,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.48
+   ]
+  },
+  {
+   "name": "food_vegetableburger",
+   "category": null,
+   "size": [
+    0.95,
+    0.86,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "fridge_A",
+   "category": null,
+   "size": [
+    2,
+    2.5,
+    2.24
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "fridge_A_decorated",
+   "category": null,
+   "size": [
+    2,
+    2.5,
+    2.24
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "fridge_B",
+   "category": null,
+   "size": [
+    2,
+    2.5,
+    2.24
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "jar_A_large",
+   "category": null,
+   "size": [
+    0.5,
+    0.75,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_A_medium",
+   "category": null,
+   "size": [
+    0.5,
+    0.65,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_A_small",
+   "category": null,
+   "size": [
+    0.57,
+    0.55,
+    0.57
+   ],
+   "min": [
+    -0.28,
+    0,
+    -0.28
+   ]
+  },
+  {
+   "name": "jar_B_large",
+   "category": null,
+   "size": [
+    0.5,
+    0.75,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_B_medium",
+   "category": null,
+   "size": [
+    0.5,
+    0.65,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_B_small",
+   "category": null,
+   "size": [
+    0.57,
+    0.55,
+    0.57
+   ],
+   "min": [
+    -0.28,
+    0,
+    -0.28
+   ]
+  },
+  {
+   "name": "jar_C_large",
+   "category": null,
+   "size": [
+    0.5,
+    0.75,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_C_medium",
+   "category": null,
+   "size": [
+    0.5,
+    0.65,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_C_small",
+   "category": null,
+   "size": [
+    0.57,
+    0.55,
+    0.57
+   ],
+   "min": [
+    -0.28,
+    0,
+    -0.28
+   ]
+  },
+  {
+   "name": "jar_D_large",
+   "category": null,
+   "size": [
+    0.5,
+    0.75,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_D_medium",
+   "category": null,
+   "size": [
+    0.5,
+    0.65,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "jar_D_small",
+   "category": null,
+   "size": [
+    0.57,
+    0.55,
+    0.57
+   ],
+   "min": [
+    -0.28,
+    0,
+    -0.28
+   ]
+  },
+  {
+   "name": "ketchup",
+   "category": null,
+   "size": [
+    0.3,
+    0.78,
+    0.3
+   ],
+   "min": [
+    -0.15,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "kitchencabinet",
+   "category": null,
+   "size": [
+    2,
+    2,
+    1.04
+   ],
+   "min": [
+    -1,
+    2,
+    0
+   ]
+  },
+  {
+   "name": "kitchencabinet_corner",
+   "category": null,
+   "size": [
+    2,
+    2,
+    2
+   ],
+   "min": [
+    -1,
+    2,
+    0
+   ]
+  },
+  {
+   "name": "kitchencabinet_corner_half",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    3,
+    0
+   ]
+  },
+  {
+   "name": "kitchencabinet_half",
+   "category": null,
+   "size": [
+    2,
+    1,
+    1.04
+   ],
+   "min": [
+    -1,
+    3,
+    0
+   ]
+  },
+  {
+   "name": "kitchencounter_innercorner",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_innercorner_backsplash",
+   "category": null,
+   "size": [
+    2,
+    1.2,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_outercorner",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_outercorner_backsplash",
+   "category": null,
+   "size": [
+    2,
+    1.2,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_sink",
+   "category": null,
+   "size": [
+    2,
+    1.8,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_sink_backsplash",
+   "category": null,
+   "size": [
+    2,
+    1.8,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_straight_A",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_straight_A_backsplash",
+   "category": null,
+   "size": [
+    2,
+    1.2,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_straight_A_decorated",
+   "category": null,
+   "size": [
+    2.01,
+    2.1,
+    2.26
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_straight_B",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_straight_B_backsplash",
+   "category": null,
+   "size": [
+    2,
+    1.2,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchencounter_straight_decorated",
+   "category": null,
+   "size": [
+    2,
+    1.91,
+    2.04
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_A",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_A_large",
+   "category": null,
+   "size": [
+    3,
+    1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_A_large_decorated",
+   "category": null,
+   "size": [
+    3,
+    1.93,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_B",
+   "category": null,
+   "size": [
+    2,
+    1,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_B_large",
+   "category": null,
+   "size": [
+    3,
+    1,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_sink",
+   "category": null,
+   "size": [
+    2,
+    1.81,
+    2
+   ],
+   "min": [
+    -1,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_sink_large",
+   "category": null,
+   "size": [
+    3,
+    1.8,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "kitchentable_sink_large_decorated",
+   "category": null,
+   "size": [
+    3,
+    1.95,
+    2
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1
+   ]
+  },
+  {
+   "name": "knife",
+   "category": null,
+   "size": [
+    0.25,
+    1.15,
+    0.1
+   ],
+   "min": [
+    -0.2,
+    -0.21,
+    -0.05
+   ]
+  },
+  {
+   "name": "lid_A",
+   "category": null,
+   "size": [
+    1,
+    0.2,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "lid_B",
+   "category": null,
+   "size": [
+    1,
+    0.2,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "lid_large",
+   "category": null,
+   "size": [
+    1.5,
+    0.3,
+    1.2
+   ],
+   "min": [
+    -0.75,
+    0,
+    -0.6
+   ]
+  },
+  {
+   "name": "menu",
+   "category": null,
+   "size": [
+    0.5,
+    0.8,
+    0.3
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "mustard",
+   "category": null,
+   "size": [
+    0.3,
+    0.78,
+    0.3
+   ],
+   "min": [
+    -0.15,
+    0,
+    -0.15
+   ]
+  },
+  {
+   "name": "oven",
+   "category": null,
+   "size": [
+    2,
+    2.02,
+    2.35
+   ],
+   "min": [
+    -1,
+    0,
+    -1.03
+   ]
+  },
+  {
+   "name": "pan_006",
+   "category": null,
+   "size": [
+    0.75,
+    0.35,
+    1.28
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "pan_A",
+   "category": null,
+   "size": [
+    1,
+    0.25,
+    1.5
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "pan_B",
+   "category": null,
+   "size": [
+    1,
+    0.25,
+    1.5
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "papertowel",
+   "category": null,
+   "size": [
+    0.5,
+    0.91,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "pillar_A",
+   "category": null,
+   "size": [
+    0.6,
+    4.1,
+    0.6
+   ],
+   "min": [
+    -0.3,
+    0,
+    -0.3
+   ]
+  },
+  {
+   "name": "pillar_B",
+   "category": null,
+   "size": [
+    1,
+    4.1,
+    1
+   ],
+   "min": [
+    -0.5,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "plate",
+   "category": null,
+   "size": [
+    0.95,
+    0.1,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "plate_dirty",
+   "category": null,
+   "size": [
+    0.95,
+    0.1,
+    0.95
+   ],
+   "min": [
+    -0.47,
+    0,
+    -0.47
+   ]
+  },
+  {
+   "name": "plate_small",
+   "category": null,
+   "size": [
+    0.75,
+    0.1,
+    0.75
+   ],
+   "min": [
+    -0.38,
+    0,
+    -0.38
+   ]
+  },
+  {
+   "name": "pot_A",
+   "category": null,
+   "size": [
+    1.4,
+    0.5,
+    1
+   ],
+   "min": [
+    -0.7,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "pot_A_stew",
+   "category": null,
+   "size": [
+    1.4,
+    0.52,
+    1
+   ],
+   "min": [
+    -0.7,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "pot_B",
+   "category": null,
+   "size": [
+    1.4,
+    0.5,
+    1
+   ],
+   "min": [
+    -0.7,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "pot_B_stew",
+   "category": null,
+   "size": [
+    1.4,
+    0.52,
+    1
+   ],
+   "min": [
+    -0.7,
+    0,
+    -0.5
+   ]
+  },
+  {
+   "name": "pot_large",
+   "category": null,
+   "size": [
+    2,
+    0.75,
+    1.2
+   ],
+   "min": [
+    -1,
+    0,
+    -0.6
+   ]
+  },
+  {
+   "name": "shelf_papertowel",
+   "category": null,
+   "size": [
+    2,
+    1.06,
+    0.6
+   ],
+   "min": [
+    -1,
+    -0.91,
+    0
+   ]
+  },
+  {
+   "name": "shelf_papertowel_decorated",
+   "category": null,
+   "size": [
+    2,
+    1.71,
+    0.63
+   ],
+   "min": [
+    -1,
+    -0.91,
+    0
+   ]
+  },
+  {
+   "name": "stew_bowl",
+   "category": null,
+   "size": [
+    0.79,
+    0.25,
+    0.79
+   ],
+   "min": [
+    -0.39,
+    0.12,
+    -0.39
+   ]
+  },
+  {
+   "name": "stew_pot",
+   "category": null,
+   "size": [
+    0.74,
+    0.25,
+    0.74
+   ],
+   "min": [
+    -0.37,
+    0.27,
+    -0.37
+   ]
+  },
+  {
+   "name": "stove_multi",
+   "category": null,
+   "size": [
+    2,
+    1.2,
+    2.29
+   ],
+   "min": [
+    -1,
+    0,
+    -1.03
+   ]
+  },
+  {
+   "name": "stove_multi_countertop",
+   "category": null,
+   "size": [
+    1.75,
+    0.27,
+    1.75
+   ],
+   "min": [
+    -0.87,
+    0.93,
+    -0.87
+   ]
+  },
+  {
+   "name": "stove_multi_decorated",
+   "category": null,
+   "size": [
+    2.2,
+    1.72,
+    2.29
+   ],
+   "min": [
+    -1,
+    0,
+    -1.03
+   ]
+  },
+  {
+   "name": "stove_single",
+   "category": null,
+   "size": [
+    2,
+    1.21,
+    2.29
+   ],
+   "min": [
+    -1,
+    0,
+    -1.03
+   ]
+  },
+  {
+   "name": "stove_single_countertop",
+   "category": null,
+   "size": [
+    1.75,
+    0.28,
+    1.75
+   ],
+   "min": [
+    -0.87,
+    0.93,
+    -0.87
+   ]
+  },
+  {
+   "name": "table_round_A",
+   "category": null,
+   "size": [
+    3,
+    1,
+    3
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "table_round_A_decorated",
+   "category": null,
+   "size": [
+    3,
+    1.86,
+    3
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "table_round_A_small",
+   "category": null,
+   "size": [
+    1.5,
+    1,
+    1.5
+   ],
+   "min": [
+    -0.75,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "table_round_A_small_decorated",
+   "category": null,
+   "size": [
+    1.5,
+    1.8,
+    1.5
+   ],
+   "min": [
+    -0.75,
+    0,
+    -0.75
+   ]
+  },
+  {
+   "name": "table_round_B",
+   "category": null,
+   "size": [
+    3,
+    1,
+    3
+   ],
+   "min": [
+    -1.5,
+    0,
+    -1.5
+   ]
+  },
+  {
+   "name": "towelrail",
+   "category": null,
+   "size": [
+    1.6,
+    0.58,
+    0.46
+   ],
+   "min": [
+    -0.8,
+    0.28,
+    0.8
+   ]
+  },
+  {
+   "name": "wall",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.5
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "wall_decorated",
+   "category": null,
+   "size": [
+    4.01,
+    4,
+    2.91
+   ],
+   "min": [
+    -2.01,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "wall_doorway",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.5
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "wall_half",
+   "category": null,
+   "size": [
+    2,
+    4,
+    0.5
+   ],
+   "min": [
+    0,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "wall_orderwindow",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.9
+   ],
+   "min": [
+    -2,
+    0,
+    -0.45
+   ]
+  },
+  {
+   "name": "wall_orderwindow_decorated",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.9
+   ],
+   "min": [
+    -2,
+    0,
+    -0.45
+   ]
+  },
+  {
+   "name": "wall_window_closed",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.5
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  },
+  {
+   "name": "wall_window_open",
+   "category": null,
+   "size": [
+    4,
+    4,
+    0.5
+   ],
+   "min": [
+    -2,
+    0,
+    -0.25
+   ]
+  }
+ ]
+}

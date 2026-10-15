@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Catalogue des décors OddOne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/catalog/catalog.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Catalogue des décors</h1>
+      <p>Packs KayKit (CC0) déjà dans le projet. Clique un modèle pour le voir en 3D à côté d'un héros, puis copie son nom pour l'utiliser dans le code.</p>
+    </div>
+    <label class="search"><span class="sr">Rechercher un modèle</span><input id="q" type="search" placeholder="Rechercher : barrel, torch, tree…" autocomplete="off" spellcheck="false"></label>
+  </header>
+
+  <nav id="tabs" class="tabs" aria-label="Packs"></nav>
+  <div id="cats" class="cats" aria-label="Catégories"></div>
+
+  <main class="layout">
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <aside id="viewer" class="viewer" aria-label="Aperçu 3D">
+      <div class="stage"><canvas id="view"></canvas><p id="viewHint" class="hint">Choisis un modèle dans la liste.</p></div>
+      <div class="meta">
+        <div class="row"><code id="vName">—</code><button id="copy" class="btn" disabled>Copier le nom</button></div>
+        <dl>
+          <div><dt>Pack</dt><dd id="vKit">—</dd></div>
+          <div><dt>Catégorie</dt><dd id="vCat">—</dd></div>
+          <div><dt>Taille (x × y × z)</dt><dd id="vSize">—</dd></div>
+          <div><dt>Par rapport au héros</dt><dd id="vRatio">—</dd></div>
+        </dl>
+        <pre id="vCode" class="code"></pre>
+        <div id="animBox" class="anim" hidden>
+          <label for="anim">Animation</label>
+          <select id="anim"></select>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="/src/catalog/catalog.ts"></script>
+</body>
+</html>

@@ -3,9 +3,13 @@
   "private": true,
   "type": "module",
   "description": "Pipeline d'assets : télécharge les packs KayKit (CC0) et produit les .glb allégés du jeu.",
-  "scripts": { "assets": "node prepare-assets.mjs" },
+  "scripts": {
+    "assets": "node prepare-assets.mjs"
+  },
   "dependencies": {
     "@gltf-transform/core": "4.1.1",
-    "@gltf-transform/functions": "4.1.1"
+    "@gltf-transform/extensions": "4.1.1",
+    "@gltf-transform/functions": "4.1.1",
+    "meshoptimizer": "0.21.0"
   }
 }
